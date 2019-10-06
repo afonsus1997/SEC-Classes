@@ -1,0 +1,185 @@
+# VERSAT@lcc (IST: gcrs 2019)
+# R12 = SP; R11 = FP
+	ldi 1
+	wrw R12
+	ldi ADDR_W
+	addi -1
+	wrw RB
+_next	rdw RB
+	beqi _top
+	rdw R12
+	shft -1
+	wrw R12
+	rdw RB
+	addi -1
+	wrw RB
+	ldi 0
+	beqi _next
+_top	rdw R12
+	addi -1
+	addi MEM_BASE
+	wrw R12
+	wrw RB
+	ldi end
+	wrwb
+	ldi 0
+	wrw R11 #FP=0
+	beqi main
+	nop
+end	ldi 0xF
+	and R1
+	addi 0x30
+	wrw CPRT_BASE
+	ldi 0xa
+	wrw CPRT_BASE
+	ldi 1
+	wrw R12
+	ldi ADDR_W
+	wrw RB
+_again	rdw RB
+	beqi _trap
+	rdw R12
+	shft -1
+	wrw R12
+	rdw RB
+	addi -1
+	wrw RB
+	ldi 0
+	beqi _again
+_trap	rdw R12
+	addi -1
+	addi MEM_BASE
+	wrw RB
+	wrwb
+# DATA
+# global x
+x	.memset 4
+# global y
+y	.memset 6
+# global main
+# TEXT
+# main ncalls=1 nargs=0 used=3a
+main	nop
+# PUSH r3
+	rdw R12
+	addi -1
+	wrw R12
+	wrw RB
+	rdw R3
+	wrwb
+# PUSH r4
+	rdw R12
+	addi -1
+	wrw R12
+	wrw RB
+	rdw R4
+	wrwb
+# PUSH r5
+	rdw R12
+	addi -1
+	wrw R12
+	wrw RB
+	rdw R5
+	wrwb
+# main {begin} framesize=0 nofp=1
+ # ADDRGP1
+	ldi y
+	wrw R5
+## ASGN=1079 ##
+ # ADDRGP1
+	ldi x
+	wrw R4
+ # INDIRI1(addrg)
+	rdw R4
+	wrw RB
+	rdwb
+	rdwb
+	wrw R4
+## INDIR=1095 ##
+ # reg: INDIRI1(reg)
+	rdw R5
+	wrw RB
+	rdwb
+	rdwb
+	wrw R3
+# _mul
+	rdw R12
+	addi -1
+	wrw RB
+	rdw R3
+	wrwb
+	rdw R12
+	addi -2
+	wrw RB
+	rdw R4
+	wrwb
+	rdw R12
+	addi -3
+	wrw R12
+	wrw RB
+	ldi L2
+	wrwb
+	ldi 0
+	beqi _mul
+L2	rdw R12
+	addi 2
+	wrw R12
+	rdw R1
+	wrw R4
+## ASGN=1077 ##
+## INDIR=1095 ##
+## INDIR=1093 ##
+ # ASGNI1(addr,reg)
+	rdw R5
+	wrw RB
+	rdw R4
+	wrwb
+ # reg: con
+	ldi 0
+	wrw R1
+## RET=1269 ##
+ # LABELV
+L1	nop
+# main {end}
+# POP r5
+	rdw R12
+	wrw RB
+	rdwb
+	rdwb
+	wrw R5
+	rdw R12
+	addi 1
+	wrw R12
+# POP r4
+	rdw R12
+	wrw RB
+	rdwb
+	rdwb
+	wrw R4
+	rdw R12
+	addi 1
+	wrw R12
+# POP r3
+	rdw R12
+	wrw RB
+	rdwb
+	rdwb
+	wrw R3
+	rdw R12
+	addi 1
+	wrw R12
+# RET
+	rdw R12
+	wrw RB
+	rdwb
+	rdwb
+	wrw RB
+	rdw R12
+	addi 1
+	wrw R12
+	ldi 0
+	beq RB
+	nop
+
+_end	.memset 0
+### The end ###
