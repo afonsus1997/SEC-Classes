@@ -1,13 +1,8 @@
 \section{Assembler}
 \label{sec:progex}
 
-PicoVersat can be programmed in its assembly language. The assembler is a Python
-program called {\tt va}. It can be used to create the boot ROM program or the user program.
+The N-bit adder can be build using iverilog by executing the make command.
 
-The assembler reads a dictionary (json format) named xdict.txt, which associates
-user friendly names with numeric constants.
 
-The dictionary xdict.txt is produced by running the xdict.v Verilog file in a
-simulator. The xdict.v file contains a testbench-like module and includes a few header
-files where the constants of interest are defined.
-
+The "AdderN\_tb" testbench file can be edited in order to change the number of bits of the adder by editiong the ".NBIT" parameter.
+A and B can be replaced with constants in order to test the block's funcionality.
