@@ -10,3 +10,9 @@
 ## Lesson 4 - 30/09
 * Basic FPGA diagram
   * Worksheet 4, drawn in LibreOffice
+
+## Lesson 5 - 03/10
+* Absent due to medical exam
+
+## Lesson 6 - 07/10
+* Parameterized verilog adder

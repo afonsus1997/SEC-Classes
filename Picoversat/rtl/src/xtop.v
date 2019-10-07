@@ -11,7 +11,8 @@ module xtop (
 	     input [`DATA_W-1:0]  par_in,
              output               par_re, 
 	     output [`DATA_W-1:0] par_out,
-	     output               par_we
+	     output               par_we,
+	     output 		  led
 	     );
 
    //
@@ -67,7 +68,10 @@ module xtop (
    //
    xled ledcontroller(
             .clk(clk),
-	         .sel(led_sel)
+	    .sel(led_sel),
+	    .data_in(data_to_wr),
+	    .data_out(led),
+	    .rst(rst)
    );
 
    //
@@ -119,7 +123,7 @@ module xtop (
    // ADDRESS DECODER
 
    xaddr_decoder addr_decoder (
-                           .led_sel(led_sel)
+                           .led_sel(led_sel),
 	                       // input select and address
                                .sel(data_sel),
 	                       .addr(data_addr),
