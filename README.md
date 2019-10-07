@@ -17,4 +17,4 @@
 ## Lesson 6 - 07/10
 * Parameterized verilog adder
 * Specification document based on picoversat
-** best, given the time 
+  * best, given the time 
