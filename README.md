@@ -17,4 +17,7 @@
 ## Lesson 6 - 07/10
 * Parameterized verilog adder
 * Specification document based on picoversat
-  * best, given the time 
+  * best i could do, given the time 
+
+## Lesson 7 - 10/10
+* Verilog implementation of a 4 bit adder with full adders

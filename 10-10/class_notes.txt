@@ -1,0 +1,19 @@
+Half Adder
+
+inputs: a, b
+outputs: s, co
+
+s=a^b
+
+co=a&b
+
+===========
+
+Full adder
+
+inputs: a, b, ci
+outputs: s, co
+
+s=a^b^cin
+
+co= a&b + (a^b)&ci
