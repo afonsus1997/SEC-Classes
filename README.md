@@ -21,3 +21,9 @@
 
 ## Lesson 7 - 10/10
 * Verilog implementation of a 4 bit adder with full adders
+
+## Lesson 8 - 14/10
+* Verilog implementation of a 4 bit carry look-ahead adder
+ * Couldn't finish in time, will complete the task when possible.
+
+
