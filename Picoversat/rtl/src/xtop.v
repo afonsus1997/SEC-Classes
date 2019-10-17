@@ -123,7 +123,7 @@ module xtop (
    // ADDRESS DECODER
 
    xaddr_decoder addr_decoder (
-                           .led_sel(led_sel),
+                               .led_sel(led_sel),
 	                       // input select and address
                                .sel(data_sel),
 	                       .addr(data_addr),

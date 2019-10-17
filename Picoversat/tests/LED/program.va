@@ -21,9 +21,11 @@ loop	ldi 1
 	xor R1
 	wrw R1
 	wrw LED_BASE
+	ldi 1
+	xor R1
+	wrw R1
+	wrw LED_BASE
 	
-	beqi loop      #go back to loop if non-zero, regA is decremented
-	          #stores back decremented iterator
 
 
 

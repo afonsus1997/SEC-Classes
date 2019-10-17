@@ -9,7 +9,7 @@ co=a&b
 
 ===========
 
-Full adder
+Full adder (ripple carry adder)
 
 inputs: a, b, ci
 outputs: s, co
@@ -17,3 +17,13 @@ outputs: s, co
 s=a^b^cin
 
 co= a&b + (a^b)&ci
+
+tp=3+(n-2)2+1
+
+=========
+
+Carry Look-ahead Adder
+
+Binary tree with 2n-1 nodes
+
+height=tp=3=log2(2n)

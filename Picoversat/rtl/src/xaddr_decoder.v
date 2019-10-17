@@ -45,7 +45,7 @@ module xaddr_decoder (
         mem_sel = sel;
       else if ( (addr & {  {`ADDR_W-`REGF_ADDR_W{1'b1}}, {`REGF_ADDR_W{1'b0}}  }) == `REGF_BASE)
         regf_sel = sel;
-	  else if ( (addr & {  {`ADDR_W-`MEM_ADDR_W{1'b0}}, {`MEM_ADDR_W{1'b0}}  }) == `LED_BASE)
+	  else if ( (addr & {  {`ADDR_W-`LED_ADDR_W{1'b1}}, {`LED_ADDR_W{1'b0}}  }) == `LED_BASE)
         led_sel = sel;
 `ifdef DEBUG
       else if ( (addr &  {  {`ADDR_W-`CPRT_ADDR_W{1'b1}}, {`CPRT_ADDR_W{1'b0}}  }) == `CPRT_BASE)

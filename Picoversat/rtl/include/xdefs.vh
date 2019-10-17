@@ -30,7 +30,7 @@
 `define CPRT_BASE 20480 //0x5000
 `define CPRT_ADDR_W 0 //only one address
 `define LED_BASE 24576 //0x6000 24576
-
+`define LED_ADDR_W 0
 
 `define TRAP_BASE 32767
 

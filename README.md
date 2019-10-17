@@ -26,4 +26,5 @@
 * Verilog implementation of a 4 bit carry look-ahead adder
  * Couldn't finish in time, will complete the task when possible.
 
-
+## Lesson 9 17/10
+* Verilog implementation of a 2 bit carry-save multiplyer
