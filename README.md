@@ -28,3 +28,6 @@
 
 ## Lesson 9 17/10
 * Verilog implementation of a 2 bit carry-save multiplyer
+
+## Project Manual Delivery
+ * The manual for the project can be consulted [here!](https://github.com/afonsus1997/SEC-Classes/blob/master/Project/docs/ug/ug.pdf)
