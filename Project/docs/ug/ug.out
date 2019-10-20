@@ -10,10 +10,10 @@
 \BOOKMARK [1][-]{section.4}{Peripherals}{}% 10
 \BOOKMARK [2][-]{subsection.4.1}{General Purpose Register File}{section.4}% 11
 \BOOKMARK [2][-]{subsection.4.2}{Debug Printer}{section.4}% 12
-\BOOKMARK [1][-]{section.5}{Memory Map}{}% 13
-\BOOKMARK [1][-]{section.6}{Instructions}{}% 14
-\BOOKMARK [2][-]{subsection.6.1}{Instruction Format}{section.6}% 15
-\BOOKMARK [2][-]{subsection.6.2}{Instruction Set Architecture}{section.6}% 16
-\BOOKMARK [2][-]{subsection.6.3}{Aliased Instructions}{section.6}% 17
-\BOOKMARK [2][-]{subsection.6.4}{Delayed Branches}{section.6}% 18
-\BOOKMARK [1][-]{section.7}{Assembler}{}% 19
+\BOOKMARK [2][-]{subsection.4.3}{LED Driver}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.4}{Switch Driver/Scanner}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.5}{Push-Button Driver}{section.4}% 15
+\BOOKMARK [2][-]{subsection.4.6}{Frequency Generator}{section.4}% 16
+\BOOKMARK [1][-]{section.5}{Memory Map}{}% 17
+\BOOKMARK [1][-]{section.6}{Implementation Results}{}% 18
+\BOOKMARK [1][-]{section.7}{Conclusions}{}% 19

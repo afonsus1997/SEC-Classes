@@ -9,12 +9,12 @@ $(TRGT).pdf: $(TRGT).tex $(OBJS) $(SRC) $(WAVES) $(TRGT).cls
 	latexmk -pdf $(TRGT).tex
 
 
-./figures/%.pdf: ./figures/%.odg
-	make -C ./figures
+#./figures/%.pdf: ./figures/%.odg
+#	make -C ./figures
 
 clean:
 	@rm -f $(addprefix ug, .lof .toc .aux .out .lot .log .bbl .blg .fls .fdb_latexmk) EPSLogo-eps-converted-to.pdf *~
-	make -C ./figures clean
+#	make -C ./figures clean
 
 .PHONY: clean all
 
