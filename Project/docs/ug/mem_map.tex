@@ -1,25 +1,24 @@
 \section{Memory Map}
 \label{sec:mem_map}
 
-The memory map of the system, as seen by picoVersat programs, is given in
-Table~\ref{tab:memmap}.
+The sequencer peripherals are mapped in memmory according to the following table:
 
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
 \begin{table}[!htbp]
   \centering
-    \begin{tabular}{|p{3cm}|c|c|c|p{4cm}|}
-    \hline 
-    {\bf Mnemonic} & {\bf Address} & {\bf Read/Write} & {\bf Read Latency} & {\bf Description} \\
-    \hline \hline 
-     REGF\_BASE & 0 & Read+Write & 0 & Register file peripheral \\
-    \hline
-     CPRT\_BASE & 1 & Write only & NA & Debug printer periheral \\
-    \hline
-     PROG\_BASE & 3 & Read+Write &  1 & User programs and data\\
-    \hline
- 
-    \end{tabular}
-  \caption{Memory map base addresses}
+  \caption{Memmory map}
   \label{tab:memmap}
-\end{table}
-
+  \begin{tabular}{@{}lcccl@{}}
+  \toprule
+  Mnemonic   & \multicolumn{1}{l}{Address} & \multicolumn{1}{l}{Read/Write} & \multicolumn{1}{l}{Read/Write Latency} & Description                                           \\ \midrule
+  SND\_BASE  & 0x25D                       & Write only                     & 0                                      & Sound frequency address for sequencer loop controller \\
+  LOOP\_BASE & 0x25C                       & Write only                     & 0                                      & Loop frequency address for sequencer loop controller  \\
+  SW\_BASE   & 0x25B                       & Read only                      & 0                                      & Slide switch peripheral                               \\
+  PUSH\_BASE & 0x25A                       & Read only                      & 0                                      & Push-button peripheral                                \\
+  CPRT\_BASE & 0x258                       & Read only                      & N/A                                    & Debug printer peripheral                              \\
+  REGF\_BASE & 0x200                       & Read+Write                     & 0                                      & Register file peripheral                              \\
+  PROG\_BASE & 0x0                         & Read+Write                     & 1                                      & User program and data                                 \\ \bottomrule
+  \end{tabular}
+  \end{table}
 

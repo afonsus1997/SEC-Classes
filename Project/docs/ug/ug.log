@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.10.7)  20 OCT 2019 20:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.10.7)  20 OCT 2019 21:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -475,36 +475,33 @@ Package pdftex.def Info: ./figures/sw_drive_blk.png  used on input line 99.
 <./figures/push_drive_blk.png, id=222, 228.10219pt x 166.37157pt>
 File: ./figures/push_drive_blk.png Graphic file (type png)
 <use ./figures/push_drive_blk.png>
-Package pdftex.def Info: ./figures/push_drive_blk.png  used on input line 138.
+Package pdftex.def Info: ./figures/push_drive_blk.png  used on input line 140.
 (pdftex.def)             Requested size: 114.0508pt x 83.18556pt.
 <./figures/periphs_interconn.png, id=223, 289.83281pt x 720.44156pt>
 File: ./figures/periphs_interconn.png Graphic file (type png)
 <use ./figures/periphs_interconn.png>
-Package pdftex.def Info: ./figures/periphs_interconn.png  used on input line 173.
+Package pdftex.def Info: ./figures/periphs_interconn.png  used on input line 175.
 (pdftex.def)             Requested size: 144.91605pt x 360.2199pt.
 File: ./figures/Logo.png Graphic file (type png)
 <use ./figures/Logo.png>
-Package pdftex.def Info: ./figures/Logo.png  used on input line 176.
+Package pdftex.def Info: ./figures/Logo.png  used on input line 178.
 (pdftex.def)             Requested size: 23.52533pt x 25.97195pt.
- [10 <./figures/led_drive_blk.png> <./figures/sw_drive_blk.png>]
+ [10 <./figures/led_drive_blk.png> <./figures/sw_drive_blk.png>]) (/home/afonsom/Github/SEC-Classes/Project/docs/ug/is.tex) (/home/afonsom/Github/SEC-Classes/Project/docs/ug/mem_map.tex
+Overfull \hbox (44.83739pt too wide) in paragraph at lines 12--23
+ [][] 
+ []
+
 File: ./figures/Logo.png Graphic file (type png)
 <use ./figures/Logo.png>
-Package pdftex.def Info: ./figures/Logo.png  used on input line 176.
+Package pdftex.def Info: ./figures/Logo.png  used on input line 23.
 (pdftex.def)             Requested size: 23.52533pt x 25.97195pt.
- [11 <./figures/push_drive_blk.png>]) (/home/afonsom/Github/SEC-Classes/Project/docs/ug/is.tex
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (/home/afonsom/Github/SEC-Classes/Project/docs/ug/mem_map.tex) (/home/afonsom/Github/SEC-Classes/Project/docs/ug/isa.tex) (/home/afonsom/Github/SEC-Classes/Project/docs/ug/progex.tex)
+[11 <./figures/push_drive_blk.png>]
+File: ./figures/Logo.png Graphic file (type png)
+<use ./figures/Logo.png>
+Package pdftex.def Info: ./figures/Logo.png  used on input line 23.
+(pdftex.def)             Requested size: 23.52533pt x 25.97195pt.
+ [12 <./figures/periphs_interconn.png>]) (/home/afonsom/Github/SEC-Classes/Project/docs/ug/isa.tex) (/home/afonsom/Github/SEC-Classes/Project/docs/ug/progex.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 37.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-File: ./figures/Logo.png Graphic file (type png)
-<use ./figures/Logo.png>
-Package pdftex.def Info: ./figures/Logo.png  used on input line 37.
-(pdftex.def)             Requested size: 23.52533pt x 25.97195pt.
- [12 <./figures/periphs_interconn.png>]
 File: ./figures/Logo.png Graphic file (type png)
 <use ./figures/Logo.png>
 Package pdftex.def Info: ./figures/Logo.png  used on input line 37.
@@ -527,17 +524,17 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 37.
  ) 
 Here is how much of TeX's memory you used:
  5975 strings out of 492623
- 89415 string characters out of 6135669
- 188424 words of memory out of 5000000
+ 89430 string characters out of 6135669
+ 189410 words of memory out of 5000000
  9744 multiletter control sequences out of 15000+600000
  21798 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  35i,15n,45p,482b,414s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on /home/afonsom/Github/SEC-Classes/Project/docs/ug/ug.pdf (13 pages, 289047 bytes).
+Output written on /home/afonsom/Github/SEC-Classes/Project/docs/ug/ug.pdf (13 pages, 288136 bytes).
 PDF statistics:
- 286 PDF objects out of 1000 (max. 8388607)
- 233 compressed objects within 3 object streams
+ 285 PDF objects out of 1000 (max. 8388607)
+ 232 compressed objects within 3 object streams
  55 named destinations out of 1000 (max. 500000)
  168 words of extra memory for PDF output out of 10000 (max. 10000000)
 

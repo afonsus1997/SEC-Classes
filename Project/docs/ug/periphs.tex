@@ -95,7 +95,7 @@ The LED driver will display the current note. The input of the driver is directl
 
 This driver reads the state of the slide-switches of the Basys 2 board.
 
-\begin{figure}[!htbp]
+\begin{figure}[!ht]
     \centerline{\includegraphics[scale=0.5]{sw_drive_blk.png}}
     \vspace{0cm}\caption{PicoVersat SoC with two peripherals}
     \label{fig:periphs}
@@ -103,7 +103,7 @@ This driver reads the state of the slide-switches of the Basys 2 board.
 
 % Please add the following required packages to your document preamble:
 % \usepackage{booktabs}
-\begin{table}[!htbp]
+\begin{table}[ht]
     \centering
     \caption{Switch driver inputs}
     \label{tab:swIn}
@@ -117,7 +117,7 @@ This driver reads the state of the slide-switches of the Basys 2 board.
 
     % Please add the following required packages to your document preamble:
 % \usepackage{booktabs}
-\begin{table}[!htbp]
+\begin{table}[ht]
     \centering
     \caption{Switch driver outputs}
     \label{tab:swOut}
@@ -127,6 +127,8 @@ This driver reads the state of the slide-switches of the Basys 2 board.
     kbd\_out & \multicolumn{1}{c}{8} & Switch state outputs \\ \bottomrule
     \end{tabular}
     \end{table}
+
+
 
 \subsection{Push-Button Driver}
 
@@ -154,7 +156,7 @@ This driver reads the state of the push-buttons of the Basys 2 board.
     \end{tabular}
     \end{table}
 
-    % Please add the following required packages to your document preamble:
+% Please add the following required packages to your document preamble:
 % \usepackage{booktabs}
 \begin{table}[!htbp]
     \centering
@@ -162,8 +164,8 @@ This driver reads the state of the push-buttons of the Basys 2 board.
     \label{tab:pshOut}
     \begin{tabular}{@{}lll@{}}
     \toprule
-    Name    & \#bits                & Description          \\ \midrule
-    sw\_out & \multicolumn{1}{c}{4} & Switch state outputs
+    Name    & \#bits                & Description               \\ \midrule
+    sw\_out & \multicolumn{1}{c}{4} & Push-button state outputs \\ \bottomrule
     \end{tabular}
     \end{table}
 

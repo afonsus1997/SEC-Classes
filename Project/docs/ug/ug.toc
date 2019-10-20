@@ -8,7 +8,7 @@
 \contentsline {subsection}{\numberline {4.4}LED Driver}{10}{subsection.4.4}% 
 \contentsline {subsection}{\numberline {4.5}Switch Driver}{10}{subsection.4.5}% 
 \contentsline {subsection}{\numberline {4.6}Push-Button Driver}{10}{subsection.4.6}% 
-\contentsline {section}{\numberline {5}Interface Signals}{12}{section.5}% 
-\contentsline {section}{\numberline {6}Memory Map}{12}{section.6}% 
+\contentsline {section}{\numberline {5}Interface Signals}{11}{section.5}% 
+\contentsline {section}{\numberline {6}Memory Map}{13}{section.6}% 
 \contentsline {section}{\numberline {7}Implementation Results}{13}{section.7}% 
 \contentsline {section}{\numberline {8}Conclusions}{13}{section.8}% 
