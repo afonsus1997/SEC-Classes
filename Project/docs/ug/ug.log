@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.10.7)  20 OCT 2019 21:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.10.7)  20 OCT 2019 22:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -213,9 +213,6 @@ LaTeX Warning: Label `fig:bd' multiply defined.
 LaTeX Warning: Label `fig:bd' multiply defined.
 
 
-LaTeX Warning: Label `fig:bd' multiply defined.
-
-
 LaTeX Warning: Label `fig:periphs' multiply defined.
 
 
@@ -409,11 +406,7 @@ File: ./figures/SequencerLoopcontroler.pdf Graphic file (type pdf)
 <use ./figures/SequencerLoopcontroler.pdf>
 Package pdftex.def Info: ./figures/SequencerLoopcontroler.pdf  used on input line 13.
 (pdftex.def)             Requested size: 346.41335pt x 153.6938pt.
-
-
-LaTeX Warning: Reference `bd' on page 7 undefined on input line 22.
-
-<./figures/bd.png, id=156, 385.44pt x 341.77687pt>
+<./figures/bd.png, id=157, 385.44pt x 341.77687pt>
 File: ./figures/bd.png Graphic file (type png)
 <use ./figures/bd.png>
 Package pdftex.def Info: ./figures/bd.png  used on input line 25.
@@ -432,12 +425,12 @@ pdfTeX warning: pdflatex (file ./figures/picoversatflux.pdf): PDF inclusion: inv
 
 pdfTeX warning: pdflatex (file ./figures/SequencerLoopcontroler.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
 >]
-<./figures/bdboard.png, id=197, 144.54pt x 89.58469pt>
+<./figures/bdboard.png, id=199, 144.54pt x 89.58469pt>
 File: ./figures/bdboard.png Graphic file (type png)
 <use ./figures/bdboard.png>
 Package pdftex.def Info: ./figures/bdboard.png  used on input line 33.
 (pdftex.def)             Requested size: 144.53963pt x 89.58446pt.
-<./figures/periphs.png, id=198, 631.60968pt x 289.08pt>
+<./figures/periphs.png, id=200, 631.60968pt x 289.08pt>
 File: ./figures/periphs.png Graphic file (type png)
 <use ./figures/periphs.png>
 Package pdftex.def Info: ./figures/periphs.png  used on input line 49.
@@ -452,12 +445,12 @@ Package pdftex.def Info: ./figures/Logo.png  used on input line 11.
  [8 <./figures/bd.png> <./figures/bdboard.png>]
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 18.
-<./figures/SequencerLoopcontroler.png, id=211, 227.34938pt x 166.37157pt>
+<./figures/SequencerLoopcontroler.png, id=213, 227.34938pt x 166.37157pt>
 File: ./figures/SequencerLoopcontroler.png Graphic file (type png)
 <use ./figures/SequencerLoopcontroler.png>
 Package pdftex.def Info: ./figures/SequencerLoopcontroler.png  used on input line 22.
 (pdftex.def)             Requested size: 113.67441pt x 83.18556pt.
-<./figures/led_drive_blk.png, id=212, 227.34938pt x 166.37157pt>
+<./figures/led_drive_blk.png, id=214, 227.34938pt x 166.37157pt>
 File: ./figures/led_drive_blk.png Graphic file (type png)
 <use ./figures/led_drive_blk.png>
 Package pdftex.def Info: ./figures/led_drive_blk.png  used on input line 61.
@@ -467,17 +460,17 @@ File: ./figures/Logo.png Graphic file (type png)
 Package pdftex.def Info: ./figures/Logo.png  used on input line 64.
 (pdftex.def)             Requested size: 23.52533pt x 25.97195pt.
  [9 <./figures/periphs.png> <./figures/SequencerLoopcontroler.png>]
-<./figures/sw_drive_blk.png, id=221, 227.34938pt x 166.37157pt>
+<./figures/sw_drive_blk.png, id=223, 227.34938pt x 166.37157pt>
 File: ./figures/sw_drive_blk.png Graphic file (type png)
 <use ./figures/sw_drive_blk.png>
 Package pdftex.def Info: ./figures/sw_drive_blk.png  used on input line 99.
 (pdftex.def)             Requested size: 113.67441pt x 83.18556pt.
-<./figures/push_drive_blk.png, id=222, 228.10219pt x 166.37157pt>
+<./figures/push_drive_blk.png, id=224, 228.10219pt x 166.37157pt>
 File: ./figures/push_drive_blk.png Graphic file (type png)
 <use ./figures/push_drive_blk.png>
 Package pdftex.def Info: ./figures/push_drive_blk.png  used on input line 140.
 (pdftex.def)             Requested size: 114.0508pt x 83.18556pt.
-<./figures/periphs_interconn.png, id=223, 289.83281pt x 720.44156pt>
+<./figures/periphs_interconn.png, id=225, 289.83281pt x 720.44156pt>
 File: ./figures/periphs_interconn.png Graphic file (type png)
 <use ./figures/periphs_interconn.png>
 Package pdftex.def Info: ./figures/periphs_interconn.png  used on input line 175.
@@ -515,26 +508,23 @@ Package rerunfilecheck Info: File `ug.out' has not changed.
 (rerunfilecheck)             Checksum: 625AF79FA4D6A83A3263A3216249BDFB;802.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 37.
  ) 
 Here is how much of TeX's memory you used:
  5975 strings out of 492623
- 89430 string characters out of 6135669
- 189410 words of memory out of 5000000
+ 89440 string characters out of 6135669
+ 189445 words of memory out of 5000000
  9744 multiletter control sequences out of 15000+600000
  21798 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,15n,45p,482b,414s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,15n,45p,469b,414s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on /home/afonsom/Github/SEC-Classes/Project/docs/ug/ug.pdf (13 pages, 288136 bytes).
+Output written on /home/afonsom/Github/SEC-Classes/Project/docs/ug/ug.pdf (13 pages, 288154 bytes).
 PDF statistics:
- 285 PDF objects out of 1000 (max. 8388607)
- 232 compressed objects within 3 object streams
+ 287 PDF objects out of 1000 (max. 8388607)
+ 234 compressed objects within 3 object streams
  55 named destinations out of 1000 (max. 500000)
  168 words of extra memory for PDF output out of 10000 (max. 10000000)
 

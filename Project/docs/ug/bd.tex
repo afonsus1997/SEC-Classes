@@ -1,17 +1,17 @@
 
 \section{Sequencer operation}
 
-Since the sequencer depends on multiple time-dependant routines and there is no trivial way to deal with this on the picoversat controller (because of the lack of interrupts), the main logic needed to be divided into two routines: one for the main sequencer loop, implemented as a standalone peripheral, and other for the reading and debouncing of the switches and pushbuttons and for data handling (frequencies).
+Since the sequencer depends on multiple time-dependant routines and there is no trivial way to deal with this on the picoversat controller (because of the lack of interrupts), the main logic is divided into two routines: one for the main sequencer loop, implemented as a standalone peripheral, and other for the reading and debouncing of the switches, pushbuttons and for data handling (frequencies).
 
 \begin{figure}[!htbp]
   \centerline{\includegraphics[scale=1.5]{Picoversatflux.pdf}}
-  \vspace{0cm}\caption{Picoversat code main loop.}
+  \vspace{0cm}\caption{Picoversat code fluxogram.}
   \label{fig:bd}
 \end{figure}
 
 \begin{figure}[!htbp]
   \centerline{\includegraphics[scale=1]{SequencerLoopcontroler.pdf}}
-  \vspace{0cm}\caption{Sequencer Loop controler peripheral main loop.}
+  \vspace{0cm}\caption{Sequencer Loop controler fluxogram.}
   \label{fig:bd}
 \end{figure}
 
@@ -19,7 +19,7 @@ Since the sequencer depends on multiple time-dependant routines and there is no 
 
 \section{Block Diagram}
 
-The hardware platform used for the developed sequencer is the Basys 2 FPGA board by digilent. The sequencer will interface with some of the board peripherals as shown in the Figure~\ref{bd} 
+The hardware platform used for the developed sequencer is the Basys 2 FPGA board by Digilent. The sequencer will interface with some of the board peripherals as shown in the Figure~\ref{fig:bd}. 
 
 \begin{figure}[!htbp]
     \centerline{\includegraphics[scale=0.5]{bd.png}}
@@ -27,12 +27,12 @@ The hardware platform used for the developed sequencer is the Basys 2 FPGA board
     \label{fig:bd}
 \end{figure}
 
-Figure x shows the Basys 2 peripherals that the user can use in order to interact with the sequencer.
+Figure~\ref{fig:bdbasys2} shows the Basys 2 peripherals that the user can use in order to interact with the sequencer.
 
 \begin{figure}[!htbp]
   \centerline{\includegraphics[scale=1]{bdboard.png}}
   \vspace{0cm}\caption{Basys 2 board peripherals}
-  \label{fig:bd}
+  \label{fig:bdbasys2}
 \end{figure}
 
 \begin{enumerate}
