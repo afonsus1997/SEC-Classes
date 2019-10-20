@@ -1,7 +1,7 @@
 \section{Interface Signals}
 \label{sec:is}
 
-The interface signals of the Versat controller core are described in Table~\ref{tab:is}.
+The interface signals of the Versat controller core are described in Table~\ref{tab:is}..
 
 \begin{table}[h]
 \centering
@@ -35,35 +35,4 @@ data\_to\_wr[31:0]                       & OUT   & Data to be written. \\
 \caption{Interface signals.}
 \label{tab:is}
 \end{table}
-
-\subsection{Instruction Bus Timing Diagram}
-\label{sec:instrird}
-
-The timing diagram for an instruction read transaction is shown in
-Figure~\ref{fig:instrird}.
-
-\begin{figure}[htbp]
-    \centerline{\includegraphics[width=.8\textwidth]{instr_rd}}
-    \vspace{0cm}\caption{Instruction (pipelined) reads.}
-    \label{fig:instrird}
-\end{figure}
-
-\subsection{Data Bus Timing Diagram}
-\label{sec:rwi}
-
-The timing diagrams for data reads and writes are shown in
-Figure~\ref{fig:rwird} and Figure~\ref{fig:rwiwr}, respectively. These
-operations may be consecutive or not, as illustrated.
-
-\begin{figure}[htbp]
-    \centerline{\includegraphics[width=.8\textwidth]{rw_rd}}
-    \vspace{0cm}\caption{Data Bus reads.}
-    \label{fig:rwird}
-\end{figure}
-
-\begin{figure}[htbp]
-    \centerline{\includegraphics[width=.8\textwidth]{rw_wr}}
-    \vspace{0cm}\caption{Data Bus writes.}
-    \label{fig:rwiwr}
-\end{figure}
 
