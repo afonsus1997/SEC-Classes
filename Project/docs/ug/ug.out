@@ -1,19 +1,16 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{Block Diagram}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Accumulator register}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Pointer register}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{Flags register}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.4}{PC register}{section.2}% 6
-\BOOKMARK [1][-]{section.3}{Interface Signals}{}% 7
-\BOOKMARK [2][-]{subsection.3.1}{Instruction Bus Timing Diagram}{section.3}% 8
-\BOOKMARK [2][-]{subsection.3.2}{Data Bus Timing Diagram}{section.3}% 9
-\BOOKMARK [1][-]{section.4}{Peripherals}{}% 10
-\BOOKMARK [2][-]{subsection.4.1}{General Purpose Register File}{section.4}% 11
-\BOOKMARK [2][-]{subsection.4.2}{Debug Printer}{section.4}% 12
-\BOOKMARK [2][-]{subsection.4.3}{LED Driver}{section.4}% 13
-\BOOKMARK [2][-]{subsection.4.4}{Switch Driver/Scanner}{section.4}% 14
-\BOOKMARK [2][-]{subsection.4.5}{Push-Button Driver}{section.4}% 15
-\BOOKMARK [2][-]{subsection.4.6}{Frequency Generator}{section.4}% 16
-\BOOKMARK [1][-]{section.5}{Memory Map}{}% 17
-\BOOKMARK [1][-]{section.6}{Implementation Results}{}% 18
-\BOOKMARK [1][-]{section.7}{Conclusions}{}% 19
+\BOOKMARK [1][-]{section.2}{Sequencer operation}{}% 2
+\BOOKMARK [1][-]{section.3}{Block Diagram}{}% 3
+\BOOKMARK [1][-]{section.4}{Interface Signals}{}% 4
+\BOOKMARK [2][-]{subsection.4.1}{Instruction Bus Timing Diagram}{section.4}% 5
+\BOOKMARK [2][-]{subsection.4.2}{Data Bus Timing Diagram}{section.4}% 6
+\BOOKMARK [1][-]{section.5}{Peripherals}{}% 7
+\BOOKMARK [2][-]{subsection.5.1}{General Purpose Register File}{section.5}% 8
+\BOOKMARK [2][-]{subsection.5.2}{Debug Printer}{section.5}% 9
+\BOOKMARK [2][-]{subsection.5.3}{LED Driver}{section.5}% 10
+\BOOKMARK [2][-]{subsection.5.4}{Switch Driver/Scanner}{section.5}% 11
+\BOOKMARK [2][-]{subsection.5.5}{Push-Button Driver}{section.5}% 12
+\BOOKMARK [2][-]{subsection.5.6}{Frequency Generator}{section.5}% 13
+\BOOKMARK [1][-]{section.6}{Memory Map}{}% 14
+\BOOKMARK [1][-]{section.7}{Implementation Results}{}% 15
+\BOOKMARK [1][-]{section.8}{Conclusions}{}% 16
