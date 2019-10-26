@@ -31,3 +31,9 @@
 
 ## Project Manual Delivery
  * The manual for the project can be consulted [here!](https://github.com/afonsus1997/SEC-Classes/blob/master/Project/docs/ug/ug.pdf)
+
+## Lesson 10 21/10
+* Verilog implementation of add-shift multiplyer
+
+## Lesson 11 24/10
+* Verilog implementation of sub-shift divider

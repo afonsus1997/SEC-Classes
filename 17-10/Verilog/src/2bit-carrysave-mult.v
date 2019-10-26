@@ -19,7 +19,7 @@ module twobitcarrysave(
 
 	fulladder s01(
 		.a(a[1]&b[1]),
-		.b(0),
+		.b(1'b0),
 		.ci(faco),
 		.co(s[3]),
 		.s(s[2])

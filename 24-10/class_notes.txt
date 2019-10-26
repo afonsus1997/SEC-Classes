@@ -1,0 +1,26 @@
+
+
+Divisores
+
+
+Combinatorio
+
+Sign(D) XOR Sign(d) = Sign (q)
+
+Converter D,d para positivos D', d'
+Fazer D'/d', q=q'*(-1)^Sign(q)
+
+Algoritmo
+q3=((2^3)*d)<D ? D=D-((2^3)*d)
+.
+.
+.
+q0
+
+Complexidade temporal O(n)
+Complexidade espacial O(n^2)
+
+============================
+
+
+

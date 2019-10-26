@@ -18,11 +18,7 @@
 	
 	
 loop	ldi 1
-	xor R1
-	wrw R1
-	wrw LED_BASE
 	ldi 1
-	xor R1
 	wrw R1
 	wrw LED_BASE
 	
