@@ -10,24 +10,24 @@ module xaddr_decoder (
 
                       //memory
 	              output reg          mem_sel,
-                      input [31:0]        mem_data_to_rd,
+                input [31:0]        mem_data_to_rd,
 
 	              output reg          regf_sel,
-                      input [31:0]        regf_data_to_rd,
+                input [31:0]        regf_data_to_rd,
 
 `ifdef DEBUG	
 	              output reg          cprt_sel,
 `endif
 
 `ifndef NO_EXT
-                      output reg          ext_sel,
-                      input [31:0]        ext_data_to_rd,
+                output reg          ext_sel,
+                input [31:0]        ext_data_to_rd,
 `endif
                       
-                      output reg          trap_sel,
+                output reg          trap_sel,
 
-                      //read port
-                      output reg [31:0]   data_to_rd
+                //read port
+                output reg [31:0]   data_to_rd
                      );
 
    

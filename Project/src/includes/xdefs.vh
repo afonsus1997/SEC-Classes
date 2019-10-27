@@ -30,17 +30,17 @@
 `define CPRT_BASE 600 //0x258
 `define CPRT_ADDR_W 0 //only one address
 
-`define PUSH_BASE
-`define PUSH_ADDR_W 0
+`define PUSH_BASE 602 //0x25A
+`define PUSH_ADDR_W 0 //only one address
 
-`define SW_BASE
-`define SW_ADDR_W 0
+`define SW_BASE 603 //0x25B
+`define SW_ADDR_W 0 //only one address
 
-`define LOOP_BASE
-`define LOOP_ADDR_W 0
+`define LOOP_BASE 604 //0x25C
+`define LOOP_ADDR_W 0 //only one address
 
-`define SND_BASE
-`define SND_ADDR_W 0
+`define SND_BASE 605 //0x25D
+`define SND_ADDR_W 0 //only one address
 
 
 `define NO_EXT 1

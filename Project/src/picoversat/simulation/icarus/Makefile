@@ -4,7 +4,7 @@ TESTS_DIR := ../../tests
 test := hello_world
 
 #rtl files
-INCLUDE_DIR := ../../rtl/include
+INCLUDE_DIR := ../../../includes
 SRC_DIR := ../../rtl/src
 SRC_DIR2 := ../../../modules
 
