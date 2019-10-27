@@ -1,6 +1,6 @@
 //
 // picoVersat system definitions
-//
+// edited for project
 
 // DATA WIDTH
 `define DATA_W 32 // bits

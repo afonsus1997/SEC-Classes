@@ -6,9 +6,10 @@ test := hello_world
 #rtl files
 INCLUDE_DIR := ../../rtl/include
 SRC_DIR := ../../rtl/src
+SRC_DIR2 := ../../../modules
 
 XDEFS := $(wildcard $(INCLUDE_DIR)/*.vh)
-SRC := $(wildcard $(SRC_DIR)/*.v) 
+SRC := $(wildcard $(SRC_DIR)/*.v) $(wildcard $(SRC_DIR2)/*.v) 
 TB := ../../rtl/testbench/xtop_tb.v
 
 
