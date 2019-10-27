@@ -1,0 +1,3 @@
+[submodule "Project/master"]
+	path = Project/master
+	url = https://jjts@bitbucket.org/jjts/picoversat/src/master/
