@@ -170,15 +170,17 @@ module xtop (
       .freq(data_to_wr),
       .sel_loop(loop_sel),
       .sel_snd(snd_sel),
-      .kbd_in(kbd_bus)
+      .kbd_in(kbd_bus),
       .snd_out(),
-      .led_out(led_bus)
+      .led_out(led_bus),
+      .clk(clk)
    );
 
    switch_driver(
       .sel(sw_sel),
       .kbd_in(kbdFPGA),
-      .kbd_out(kbd_bus)
+      .kbd_out(kbd_bus),
+      .clk(clk)
    );
 
    led_driver(
@@ -189,7 +191,8 @@ module xtop (
    push_button_driver(
       .sel(sw_sel),
       .sw_in(swFPGA),
-      .sw_out(data_to_wr[3:0])
+      .sw_out(data_to_wr[3:0]),
+      .clk(clk)
    );
 
 
