@@ -4,7 +4,7 @@
 
 
 
-module sequencer_loop_ctl(
+module sequencer_loop_controller(
     input [7:0] freq,
     input [7:0] kbd_in,
     input sel_loop,
@@ -15,13 +15,13 @@ module sequencer_loop_ctl(
     input rst
 );
 
-    assign reg [15:0] snd_counter;
-    assign reg [25:0] loop_counter;
+    reg [15:0] snd_counter;
+    reg [25:0] loop_counter;
 
     always @ (posedge clk, posedge rst) begin
         
         if(rst) begin
-            snd_loop <= 0;
+            loop_counter <= 0;
             snd_counter <= 0;
         end
 

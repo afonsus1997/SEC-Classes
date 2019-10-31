@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-`include "xdefs.vh"
+`include "../include/xdefs.vh"
 
 
 module xtop (
@@ -146,7 +146,7 @@ module xtop (
                            .trap_sel(trap),
                                
                            //data output 
-                           .data_to_rd(data_to_rd)
+                           .data_to_rd(data_to_rd),
 
                            //module selects
                            //loop controller selects
@@ -166,7 +166,7 @@ module xtop (
    //
    //
 
-   sequencer_loop_controller(
+   sequencer_loop_controller xloop(
       .freq(data_to_wr),
       .sel_loop(loop_sel),
       .sel_snd(snd_sel),
@@ -176,19 +176,19 @@ module xtop (
       .clk(clk)
    );
 
-   switch_driver(
+   switch_driver xsw(
       .sel(sw_sel),
       .kbd_in(kbdFPGA),
-      .kbd_out(kbd_bus),
-      .clk(clk)
+      //.kbd_out(kbd_bus),
+      .kbd_out(led_bus)
    );
 
-   led_driver(
+   led_driver xled(
       .data_in(led_bus),
       .led_out(ledsFPGA)
    );
 
-   push_button_driver(
+   push_button_driver xpush(
       .sel(sw_sel),
       .sw_in(swFPGA),
       .sw_out(data_to_wr[3:0]),

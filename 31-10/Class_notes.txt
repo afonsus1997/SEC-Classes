@@ -1,0 +1,5 @@
+Planks constant to floating point
+
+s = 0
+e = -34 + 127 = 93
+f = ...

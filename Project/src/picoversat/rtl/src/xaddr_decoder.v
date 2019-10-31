@@ -27,7 +27,19 @@ module xaddr_decoder (
                 output reg          trap_sel,
 
                 //read port
-                output reg [31:0]   data_to_rd
+                output reg [31:0]   data_to_rd,
+
+
+                //module selects
+                           //loop controller selects
+                output reg sel_loop,
+                output reg  sel_snd,
+
+                //switch selects
+                output reg kbd_sel,
+
+                //push-btn selects
+                output reg sw_sel
                      );
 
    

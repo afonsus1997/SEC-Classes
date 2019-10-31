@@ -37,3 +37,9 @@
 
 ## Lesson 11 24/10
 * Verilog implementation of sub-shift divider
+
+## Lesson 12 28/10
+* No assignment
+
+## Lesson 13 31/10
+* Planks constant (no assignment)
