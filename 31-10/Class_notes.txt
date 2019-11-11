@@ -3,3 +3,10 @@ Planks constant to floating point
 s = 0
 e = -34 + 127 = 93
 f = ...
+
+
+Log2(P) = -110
+
+0.86011 = P/2^-110
+
+

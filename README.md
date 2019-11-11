@@ -43,3 +43,6 @@
 
 ## Lesson 13 31/10
 * Planks constant (no assignment)
+
+## Lesson 14 7/11
+* Absent due to the WebSummit conference
