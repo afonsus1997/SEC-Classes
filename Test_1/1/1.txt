@@ -1,0 +1,47 @@
+a)
+
+For a break even scenario, the total of sales would be equal to the total cost.
+
+The total sales is the area of the triagle, (15*3)/2 = 22.5E6
+The total cost is Volume * UnitaryCost + NRE = 10E3 * 1E3 + 2E6 = 12E6
+For the provided scenario, the margin is 22.5E6 - 12E6 = 10.5E6
+
+For the break even scenario, the Lost revenue shoud be equal to the margin (10.5E6)
+This means that the area difference between the on-time trianlge and the delayed bread even triangle would be equal to 10.5E6
+
+A (0;15;3)
+B (d;15;h)
+
+10.5E6 = (15*3)/2 - (15-d)/h
+
+15 -- 15-d
+3  -- h
+
+h= (3*(15-d))/15
+
+10.5E6 = (15*3)/2 - ((15-d)*((15-d)*3/15))/2
+10.5E6 = 22.5 - ((15-d)*((15-d)*3/15))/2
+put equantion into solver (symbolab)
+d=15-2\sqrt{30},\:d=2\sqrt{30}+1
+only d with possible value is 15-2\sqrt{30} = 4.04
+
+
+
+b)
+
+A (0;15;3)
+B (1;15;h)
+
+h calculation:
+15 -- 14
+3  -- h     h=2.8
+
+Area of B (revenue) = (14*2.8)/2 = 19.6
+
+PM = [R-(NRE+V*UC)]/R
+   = [19.6E6-(2E6+10E3*10E3)]/19.6E6
+   = 0.388
+
+
+c)
+I would recommend an application specific integrated circuit with the required authentication feature build-in (e.g. security focused microcontroller with hardware hashing) 

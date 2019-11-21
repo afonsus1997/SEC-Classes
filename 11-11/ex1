@@ -1,0 +1,16 @@
+(U)nitary(C)ost (production) = 2usd
+(V)olume = 20000 units
+(N)on(R)ecurring(E)ngineering = 20000usd
+(P)rofit(M)argin(t) = ?
+		    =(Total(S)ales-Total(C)ost)/(S)ales
+		    =1-(C/S)
+
+C = V*UC+NRE
+S = S(delay) (integral triangle) = ((w-d)h(d))/2 = ((w-d)/2) * ((w-d)/w)*H = (((w-d)^2)*H)/(2W)
+
+				d=0 => S=(w/2)H
+				S=C (((w-d)^2)*H)/(2W) = v*UC + NRE = 65.3 ou 134.64
+								    = 65.3
+
+h = ((w-d)/w)*H
+

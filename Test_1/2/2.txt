@@ -1,0 +1,58 @@
+module test_ex1 (
+                  input clk,
+                  input [3:0] a,
+                  output reg [11:0] c
+                  );
+
+   reg [7:0]                  y;
+
+   always @(posedge clk) begin 
+        y <= a*a;
+        c  <= y*a;
+   end
+
+endmodule
+
+a) the module computes the cube of the input value (a*a*a)
+
+b) In order to make the signed mltiplication, the registers needs to be signed
+
+module test_ex1 (
+                  input clk,
+                  input signed [3:0] a,
+                  output reg signed [11:0] c
+                  );
+
+   reg signed [7:0]                  y;
+
+   always @(posedge clk) begin 
+        y <= a*a;
+        c  <= y*a;
+   end
+
+endmodule
+
+
+For example, with input a = -2, c would produce -8 in 2's complement FF8
+(confirmed in gtkwave)
+
+c) It does not support pipeline operation. Buffer registers would be nedded to store the multiple calculation steps for each input, otherwise the next input would crush the last calculations.
+
+d)
+module test_ex1 (
+                  input signed [3:0] a,
+                  output reg signed [11:0] c
+                  );
+
+
+   always @* begin 
+        c = a*a*a;
+   end
+
+endmodule
+
+(checked in gtkwave)
+
+The combinatory version of the program would require a much bigger area because it would require the circuit to have 3 descrete 12bit multipliers, unlike the sequencial circuit that can achieve the same result with one multiplier and a register that would store the intermidiate result and accomulate at each clock cycle.
+
+In therms of delay, th
