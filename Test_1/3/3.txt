@@ -1,0 +1,3 @@
+b) a control pad is not needed because the already existing contol input (xvalid) can be used to control the registers.
+
+c) the circuit has a latency of 2 clock signals, so if the clock frequency is 50MHz, the maximum input sample rate would be 50MHz/2 = 25MHz
