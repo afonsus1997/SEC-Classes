@@ -1,0 +1,36 @@
+#
+# Hello World!
+#
+#	a simple picoVersat program
+#
+
+# uncomment test ADD instruction
+#        ldi 2
+#        wrw R1
+#        ldi 3
+#        wrw R2
+#        add R1
+#        wrw TRAP_BASE
+
+
+
+# read string from memory and write to char printer
+	
+	
+loop	ldi 1
+	xor R1
+	wrw R1
+	wrw LED_BASE
+	ldi 1
+	xor R1
+	wrw R1
+	wrw LED_BASE
+	
+
+
+
+
+#finish by activating trap
+end	wrw TRAP_BASE
+
+
