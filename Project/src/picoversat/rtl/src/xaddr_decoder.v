@@ -60,6 +60,13 @@ module xaddr_decoder (
         mem_sel = sel;
       else if ( (addr & {  {`ADDR_W-`REGF_ADDR_W{1'b1}}, {`REGF_ADDR_W{1'b0}}  }) == `REGF_BASE)
         regf_sel = sel;
+      
+      
+      else if ( (addr & {  {`ADDR_W-`SND_ADDR_W{1'b1}}, {`SND_ADDR_W{1'b0}}  }) == `SND_BASE)
+        sel_snd = sel;
+      else if ( (addr & {  {`ADDR_W-`LOOP_ADDR_W{1'b1}}, {`LOOP_ADDR_W{1'b0}}  }) == `LOOP_BASE)
+        sel_loop = sel;
+
 `ifdef DEBUG
       else if ( (addr &  {  {`ADDR_W-`CPRT_ADDR_W{1'b1}}, {`CPRT_ADDR_W{1'b0}}  }) == `CPRT_BASE)
         cprt_sel = sel;

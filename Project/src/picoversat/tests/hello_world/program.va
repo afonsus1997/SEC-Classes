@@ -28,7 +28,7 @@ neg     ldi 4
         rdw RC
         and R0
         bneqi ov
-        ldi 'n'
+        ldi 'n'         
         wrw CPRT_BASE
         ldi '\n'
         wrw CPRT_BASE

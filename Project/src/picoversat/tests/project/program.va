@@ -1,0 +1,13 @@
+# 
+# Hello World!
+#
+#	a simple picoVersat program
+#
+#   assign regC = {negative, overflow, {(`DATA_W-3){1'b0}}, carry};
+
+
+main    ldi 1
+        wrw SND_BASE
+        wrw LOOP_BASE
+        
+        
