@@ -31,8 +31,10 @@ module sequencer_loop_controller(
 	 
 	 reg [7:0] freqintest;
 	 reg [7:0] sweeptest;
+	 reg [7:0] sndentest;
     reg [20:0] freq;
 	 reg [27:0] sweep;
+	 reg [27:0] snd_en_time;
     
 	
 	
@@ -84,6 +86,20 @@ module sequencer_loop_controller(
 	
 	end
 	
+	always @(sndentest) begin
+	
+		case(sndentest)
+			8'd0 : snd_en_time <= 28'h2FAF08;
+			8'd1 : snd_en_time <= 28'h367EE4;
+			8'd2 : snd_en_time <= 28'h3F940A;
+			8'd3 : snd_en_time <= 28'h4C4B40;
+			8'd4 : snd_en_time <= 28'h5F5E10;
+			8'd5 : snd_en_time <= 28'h7F2815;
+			8'd6 : snd_en_time <= 28'hBEBC20;
+			8'd7 : snd_en_time <= 28'h17D7840;
+		endcase
+	
+	end
 	
 	
 	
@@ -93,8 +109,9 @@ module sequencer_loop_controller(
 			loop_counter <= 0;
 			curr_sft <= 0;
 			scroll_out <= 0'b10000000;
-			freqintest <= 12;
+			freqintest <= 15;
 			sweeptest <= 0;
+			sndentest <= 0;
 		end
 		 
 		 
@@ -125,7 +142,7 @@ module sequencer_loop_controller(
 			snd_en <= 0;
 		end
 		
-		else if (snd_counter == freq) begin
+		else if (snd_counter == snd_en_time) begin
 			snd_counter <= 0;
 			snd_en <= !snd_en ;
 		end
@@ -138,7 +155,7 @@ module sequencer_loop_controller(
 	always @ (posedge clk, posedge rst) begin
 		if(rst)
 			snd_gen <= 0;
-		else if (snd_freq_counter == 27'h17D784) begin
+		else if (snd_freq_counter == freq) begin
 			snd_freq_counter <= 0;
 			snd_gen <= !snd_gen;
 		end

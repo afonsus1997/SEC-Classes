@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-`include "xdefs.vh"
+`include "../include/xdefs.vh"
 
 module xtop_tb;
    
@@ -72,7 +72,7 @@ module xtop_tb;
       for (k = 0; k < 2**`REGF_ADDR_W; k=k+1)
 	   data[k] = uut.regf.regf[k];
   
-      $writememh("data_out.hex", data, 0, 2**`REGF_ADDR_W - 1);
+      //$writememh("data_out.hex", data, 0, 2**`REGF_ADDR_W - 1);
 
    end // initial begin
 
