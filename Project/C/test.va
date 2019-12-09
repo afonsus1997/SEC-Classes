@@ -53,7 +53,7 @@ _trap	rdw R12
 	wrwb
 # global main
 # TEXT
-# main ncalls=0 nargs=0 used=22
+# main ncalls=0 nargs=0 used=20
 main	nop
 # PUSH r5
 	rdw R12
@@ -97,10 +97,6 @@ main	nop
 	wrw RB
 	ldi 5
 	wrwb
- # reg: con
-	ldi 1
-	wrw R1
-## RET=1269 ##
  # LABELV
 L1	nop
 # main {end}
