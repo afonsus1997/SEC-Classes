@@ -1,0 +1,136 @@
+# VERSAT@lcc (IST: gcrs 2019)
+# R12 = SP; R11 = FP
+	ldi 1
+	wrw R12
+	ldi ADDR_W
+	addi -1
+	wrw RB
+_next	rdw RB
+	beqi _top
+	rdw R12
+	shft -1
+	wrw R12
+	rdw RB
+	addi -1
+	wrw RB
+	ldi 0
+	beqi _next
+_top	rdw R12
+	addi -1
+	addi MEM_BASE
+	wrw R12
+	wrw RB
+	ldi end
+	wrwb
+	ldi 0
+	wrw R11 #FP=0
+	beqi main
+	nop
+end	ldi 0xF
+	and R1
+	addi 0x30
+	wrw CPRT_BASE
+	ldi 0xa
+	wrw CPRT_BASE
+	ldi 1
+	wrw R12
+	ldi ADDR_W
+	wrw RB
+_again	rdw RB
+	beqi _trap
+	rdw R12
+	shft -1
+	wrw R12
+	rdw RB
+	addi -1
+	wrw RB
+	ldi 0
+	beqi _again
+_trap	rdw R12
+	addi -1
+	addi MEM_BASE
+	wrw RB
+	wrwb
+# global main
+# TEXT
+# main ncalls=0 nargs=0 used=20
+main	nop
+# PUSH r5
+	rdw R12
+	addi -1
+	wrw R12
+	wrw RB
+	rdw R5
+	wrwb
+# save fp: PUSH fp; MOV fp, sp
+	rdw R12
+	addi -1
+	wrw R12
+	wrw RB
+	rdw R11
+	wrwb
+	rdw R12
+	wrw R11
+# alloc var space: SUB sp, 1
+	rdw R12
+	addi -1
+	wrw R12
+# main {begin} framesize=1 nofp=0
+	ldi 0x5c
+	ldih 0x0
+	wrw R5
+ # ASGNP1(fpN,reg)
+	rdw R11
+	addi -1
+	wrw RB
+	rdw R5
+	wrwb
+ # INDIRP1(fpN)
+	rdw R11
+	addi -1
+	wrw RB
+	rdwb
+	rdwb
+	wrw R5
+ # ASGNI1(addr,con)
+	rdw R5
+	wrw RB
+	ldi 5
+	wrwb
+ # LABELV
+L1	nop
+# main {end}
+# restore fp: MOV sp, fp; POP fp
+	rdw R11
+	wrw R12
+	wrw RB
+	rdwb
+	rdwb
+	wrw R11
+	rdw R12
+	addi 1
+	wrw R12
+# POP r5
+	rdw R12
+	wrw RB
+	rdwb
+	rdwb
+	wrw R5
+	rdw R12
+	addi 1
+	wrw R12
+# RET
+	rdw R12
+	wrw RB
+	rdwb
+	rdwb
+	wrw RB
+	rdw R12
+	addi 1
+	wrw R12
+	ldi 0
+	beq RB
+	nop
+
+_end	.memset 0
+### The end ###

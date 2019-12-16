@@ -51,16 +51,35 @@ _trap	rdw R12
 	addi MEM_BASE
 	wrw RB
 	wrwb
-# global main
+# DATA
+# global loopAddr
+loopAddr	.memset 604
+# global pushAddr
+pushAddr	.memset 602
+# global delay
 # TEXT
-# main ncalls=0 nargs=0 used=22
-main	nop
+# delay ncalls=0 nargs=1 used=430
+delay	nop
+# PUSH r4
+	rdw R12
+	addi -1
+	wrw R12
+	wrw RB
+	rdw R4
+	wrwb
 # PUSH r5
 	rdw R12
 	addi -1
 	wrw R12
 	wrw RB
 	rdw R5
+	wrwb
+# PUSH r10
+	rdw R12
+	addi -1
+	wrw R12
+	wrw RB
+	rdw R10
 	wrwb
 # save fp: PUSH fp; MOV fp, sp
 	rdw R12
@@ -71,39 +90,63 @@ main	nop
 	wrwb
 	rdw R12
 	wrw R11
-# alloc var space: SUB sp, 1
-	rdw R12
-	addi -1
-	wrw R12
-# main {begin} framesize=1 nofp=0
-	ldi 0x5c
-	ldih 0x0
-	wrw R5
- # ASGNP1(fpN,reg)
+# delay {begin} framesize=0 nofp=0
+ # INDIRI1(fpN)
 	rdw R11
-	addi -1
-	wrw RB
-	rdw R5
-	wrwb
- # INDIRP1(fpN)
-	rdw R11
-	addi -1
+	addi 5
 	wrw RB
 	rdwb
 	rdwb
 	wrw R5
- # ASGNI1(addr,con)
+ # reg: con
+	ldi 15
+	wrw R4
+# SHL
 	rdw R5
+	wrw R10
+	rdw R4
 	wrw RB
-	ldi 5
-	wrwb
+	beqi L6
+	nop
+L5	rdw R10
+	shft -1
+	wrw R10
+	rdw RB
+	addi -1
+	wrw RB
+	bneqi L5
+L6	nop
+## ASGN=1077 ##
+ # LABELV
+L2	nop
+ # LABELV
+L3	nop
+## INDIR=1093 ##
+ # LOADI1(reg)
+	rdw R10
+	wrw R5
+## ASGN=1077 ##
+## INDIR=1093 ##
  # reg: con
 	ldi 1
-	wrw R1
-## RET=1269 ##
+	wrw R4
+ # SUBI1(reg,reg)
+	rdw R5
+	sub R4
+	wrw R10
+## ASGN=1077 ##
+## INDIR=1093 ##
+ # reg: con
+	ldi 0
+	wrw R4
+ # NEI1
+	rdw R5
+	sub R4
+	bneqi L2
+	nop
  # LABELV
 L1	nop
-# main {end}
+# delay {end}
 # restore fp: MOV sp, fp; POP fp
 	rdw R11
 	wrw R12
@@ -114,12 +157,187 @@ L1	nop
 	rdw R12
 	addi 1
 	wrw R12
+# POP r10
+	rdw R12
+	wrw RB
+	rdwb
+	rdwb
+	wrw R10
+	rdw R12
+	addi 1
+	wrw R12
 # POP r5
 	rdw R12
 	wrw RB
 	rdwb
 	rdwb
 	wrw R5
+	rdw R12
+	addi 1
+	wrw R12
+# POP r4
+	rdw R12
+	wrw RB
+	rdwb
+	rdwb
+	wrw R4
+	rdw R12
+	addi 1
+	wrw R12
+# RET
+	rdw R12
+	wrw RB
+	rdwb
+	rdwb
+	wrw RB
+	rdw R12
+	addi 1
+	wrw R12
+	ldi 0
+	beq RB
+	nop
+
+# global main
+# main ncalls=0 nargs=0 used=630
+main	nop
+# PUSH r4
+	rdw R12
+	addi -1
+	wrw R12
+	wrw RB
+	rdw R4
+	wrwb
+# PUSH r5
+	rdw R12
+	addi -1
+	wrw R12
+	wrw RB
+	rdw R5
+	wrwb
+# PUSH r9
+	rdw R12
+	addi -1
+	wrw R12
+	wrw RB
+	rdw R9
+	wrwb
+# PUSH r10
+	rdw R12
+	addi -1
+	wrw R12
+	wrw RB
+	rdw R10
+	wrwb
+# main {begin} framesize=0 nofp=1
+ # ADDRGP1
+	ldi loopAddr
+	wrw R5
+ # INDIRI1(addrg)
+	rdw R5
+	wrw RB
+	rdwb
+	rdwb
+	wrw R5
+ # LOADP1(reg)
+	rdw R5
+	wrw R10
+## ASGN=1079 ##
+ # ADDRGP1
+	ldi pushAddr
+	wrw R5
+ # INDIRI1(addrg)
+	rdw R5
+	wrw RB
+	rdwb
+	rdwb
+	wrw R5
+ # LOADP1(reg)
+	rdw R5
+	wrw R9
+## ASGN=1079 ##
+ # JUMPV(addrj)
+	ldi 0
+	beqi L9
+	nop
+ # LABELV
+L8	nop
+## INDIR=1095 ##
+ # reg: INDIRI1(reg)
+	rdw R9
+	wrw RB
+	rdwb
+	rdwb
+	wrw R5
+ # reg: con
+	ldi 0
+	wrw R4
+ # NEI1
+	rdw R5
+	sub R4
+	bneqi L11
+	nop
+## INDIR=1095 ##
+ # ASGNI1(addr,con)
+	rdw R10
+	wrw RB
+	ldi 6
+	wrwb
+ # JUMPV(addrj)
+	ldi 0
+	beqi L12
+	nop
+ # LABELV
+L11	nop
+## INDIR=1095 ##
+ # ASGNI1(addr,con)
+	rdw R10
+	wrw RB
+	ldi 1
+	wrwb
+ # LABELV
+L12	nop
+ # LABELV
+L9	nop
+ # JUMPV(addrj)
+	ldi 0
+	beqi L8
+	nop
+ # LABELV
+L7	nop
+# main {end}
+# POP r10
+	rdw R12
+	wrw RB
+	rdwb
+	rdwb
+	wrw R10
+	rdw R12
+	addi 1
+	wrw R12
+# POP r9
+	rdw R12
+	wrw RB
+	rdwb
+	rdwb
+	wrw R9
+	rdw R12
+	addi 1
+	wrw R12
+# POP r5
+	rdw R12
+	wrw RB
+	rdwb
+	rdwb
+	wrw R5
+	rdw R12
+	addi 1
+	wrw R12
+# POP r4
+	rdw R12
+	wrw RB
+	rdwb
+	rdwb
+	wrw R4
 	rdw R12
 	addi 1
 	wrw R12
