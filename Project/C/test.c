@@ -1,7 +1,7 @@
 
-//#define MILSPERCLOCK 32768
-// #define deboucetm 65536
-#define deboucetm 1048576
+#define deboucetm 393216
+//#define deboucetm 262144
+
 
 
 long debouncevar;
@@ -29,15 +29,18 @@ main(){
 		
 		if(lastpush == 1){
 			if(speedToWr == 7)
-				speedToWr = 0;
+				speedToWr = oldspeed;
 			else
-				speedToWr = 7;
-			//else *speed = *speed++;
+				speedToWr = oldspeed + 1;
 		}
-		else if(lastpush == 2)
-			speedToWr = 7;
+		else if(lastpush == 2){
+			if(speedToWr == 0)
+				speedToWr = oldspeed;
+			else
+				speedToWr = oldspeed - 1;
+		}
 		else if(lastpush == 4)
-		speedToWr = 0;
+			speedToWr = 7;
 
 		if(oldspeed != speedToWr){
 			*speed = speedToWr;

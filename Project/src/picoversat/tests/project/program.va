@@ -320,8 +320,9 @@ L6	nop
 	sub R5
 	bneqi L11
 	nop
- # reg: con
-	ldi 0
+## INDIR=1093 ##
+ # LOADI1(reg)
+	rdw R8
 	wrw R10
 ## ASGN=1077 ##
  # JUMPV(addrj)
@@ -330,8 +331,10 @@ L6	nop
 	nop
  # LABELV
 L11	nop
- # reg: con
-	ldi 7
+## INDIR=1093 ##
+ # ADDI1(reg,con)
+	rdw R8
+	addi 1
 	wrw R10
 ## ASGN=1077 ##
  # JUMPV(addrj)
@@ -349,8 +352,33 @@ L9	nop
 	sub R5
 	bneqi L13
 	nop
+## INDIR=1093 ##
  # reg: con
-	ldi 7
+	ldi 0
+	wrw R5
+ # NEI1
+	rdw R10
+	sub R5
+	bneqi L15
+	nop
+## INDIR=1093 ##
+ # LOADI1(reg)
+	rdw R8
+	wrw R10
+## ASGN=1077 ##
+ # JUMPV(addrj)
+	ldi 0
+	beqi L14
+	nop
+ # LABELV
+L15	nop
+## INDIR=1093 ##
+ # reg: con
+	ldi 1
+	wrw R5
+ # SUBI1(reg,reg)
+	rdw R8
+	sub R5
 	wrw R10
 ## ASGN=1077 ##
  # JUMPV(addrj)
@@ -366,14 +394,14 @@ L13	nop
  # NEI1
 	rdw R9
 	sub R5
-	bneqi L15
+	bneqi L17
 	nop
  # reg: con
-	ldi 0
+	ldi 7
 	wrw R10
 ## ASGN=1077 ##
  # LABELV
-L15	nop
+L17	nop
  # LABELV
 L14	nop
  # LABELV
@@ -383,7 +411,7 @@ L10	nop
  # EQI1
 	rdw R8
 	sub R10
-	beqi L17
+	beqi L19
 	nop
 ## INDIR=1095 ##
 ## INDIR=1093 ##
@@ -398,24 +426,24 @@ L10	nop
 	wrw R8
 ## ASGN=1077 ##
  # LABELV
-L17	nop
+L19	nop
  # ARGI1(con)
 	rdw R12
 	addi -1
 	wrw R12
 	wrw RB
-	ldi 1048576
+	ldi 393216
 	wrwb
 # CALL
 	rdw R12
 	addi -1
 	wrw R12
 	wrw RB
-	ldi L22
+	ldi L24
 	wrwb
 	ldi 0
 	beqi debouce
-L22	nop
+L24	nop
 	rdw R12
 	addi 1
 	wrw R12
@@ -426,12 +454,12 @@ L7	nop
 	beqi L6
 	nop
  # LABELV
-L19	nop
+L21	nop
  # LABELV
-L20	nop
+L22	nop
  # JUMPV(addrj)
 	ldi 0
-	beqi L19
+	beqi L21
 	nop
  # reg: con
 	ldi 0
