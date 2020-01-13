@@ -27,20 +27,22 @@ main(){
 	while(1){
 		lastpush = *push; 
 		
-		if(lastpush == 1){
+		if(lastpush == 2){
 			if(speedToWr == 7)
 				speedToWr = oldspeed;
 			else
 				speedToWr = oldspeed + 1;
 		}
-		else if(lastpush == 2){
+		else if(lastpush == 1){
 			if(speedToWr == 0)
 				speedToWr = oldspeed;
 			else
 				speedToWr = oldspeed - 1;
 		}
-		else if(lastpush == 4)
+		else if(lastpush == 5)
 			speedToWr = 7;
+		else if(lastpush == 4)
+			speedToWr = 0;
 
 		if(oldspeed != speedToWr){
 			*speed = speedToWr;
