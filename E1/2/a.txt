@@ -1,0 +1,7 @@
+8MB = 2^3 * 2^20
+
+8MB/1B = 8M cell = 2^23 cell
+
+12rows + 11 coumns
+
+since lin and col pins are shared, IO pins = 12

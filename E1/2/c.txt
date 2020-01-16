@@ -1,0 +1,7 @@
+refresh duration = #rows x taccess(row)
+                if 12rows + 11 coumns
+                 = 2^12 * 50ps = 204ns
+
+refresh overhead = refresh duration/refresh period
+                 = (rd / refresh period) * 100
+                 = (204ns / (80*10^-6)) *100 = 0.255%

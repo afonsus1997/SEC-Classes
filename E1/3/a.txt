@@ -1,0 +1,18 @@
+8kB cache
+2way
+32B line 
+512M addr space
+32bit word = 
+
+
+#addr bits = log2(512M) = log2(2^9*2^20) = 29
+
+#lines = cache_size / line size / ways
+        = 2^3 * 2^10 / 2^5 / 2 = 128 -> 7 bits index
+
+#offset bits = log2(line size / word size) = log2(2^5/(32/8)) = 3 bits offset
+
+
+
+addr
+tag (17) + index (7) + offset(3) + byte select(2) = 29

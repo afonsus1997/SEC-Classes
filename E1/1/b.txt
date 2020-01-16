@@ -1,0 +1,16 @@
+mem size = 32kB
+word size = 8b
+
+number of words = 32kB/8b = 32k words (1word per line)
+
+the chip designed in a has 
+    data = 8bits 
+    mem size = 2^10 = 1KB
+
+since each chip already outputs 8b, 32 chips are used
+
+log2(32k) = 15 -> 15 address bits
+
+to address one word from a chip -> 10 bits
+
+to address each chip -> 5 bits

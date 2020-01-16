@@ -1,0 +1,16 @@
+Cd = 400 fF ; Cc = 20 fF ; VDD = 1.8 V ; deltaV = 80 mV ; ts = 5ps
+
+t -> oo
+---------
+
+vinf = ((Cd-Cc)/(Cd+Cc)) * vdd/2
+     = 19 fF * vdd/2 = 0.8V
+
+ts = RCln((vd/2-vinf)/(vdd/2-dv-vinf))
+
+RC = R*(Cd ser Cc)
+
+extract R:
+R = 163.51
+
+
