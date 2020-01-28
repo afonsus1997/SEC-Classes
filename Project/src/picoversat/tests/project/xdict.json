@@ -11,7 +11,7 @@
 "SEL_ADDR_W":3,
 "beqi":12,
 "R14":526,
-"SND_BASE":605,
+"SND_BASE":606,
 "xor":5,
 "sub":2,
 "R10":522,

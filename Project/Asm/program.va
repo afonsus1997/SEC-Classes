@@ -44,7 +44,7 @@ initializations nop
     wrw R7
     ldi 5
     wrw R8
-    ldi 4
+    ldi 6
     wrw R9
     ldi 7
     wrw R11
@@ -52,10 +52,10 @@ initializations nop
     wrw R14
 
 
-    ldi 0
+    ldi 7
     wrw LOOP_BASE
     ldi 0
-    wrw SND_BASE
+    wrw 606
 
 # main loop
 mainloop nop
@@ -136,7 +136,7 @@ dontupdate1alt nop
 btn2alttest nop 
     rdw R4     
     sub R9 
-    bneqi soundupdate
+    bneqi debounceLoop
 
 # btn 2alt pressed routine
 btn2altpressed nop
@@ -149,7 +149,7 @@ btn2altpressed nop
     beqi soundupdate
 
 dontupdate2alt nop
-    beqi soundupdate
+    beqi debounceLoop
 
 
 

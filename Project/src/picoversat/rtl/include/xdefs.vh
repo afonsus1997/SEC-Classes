@@ -43,7 +43,7 @@
 `define LOOP_BASE 604 //0x25C
 `define LOOP_ADDR_W 0 //only one address
 
-`define SND_BASE 605 //0x25D
+`define SND_BASE 606 //0x25D
 `define SND_ADDR_W 0 //only one address
 
 
