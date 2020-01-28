@@ -50,52 +50,14 @@ initializations nop
 # main loop
 mainloop nop
 #    ldi 262144
-    ldi 393216
+#    ldi 393216
+    ldi 0xFFFFF
     wrw R3
     rdw PUSH_BASE 
 #    rdw
 #store push button state on r4
     wrw R4 
-##=============NORMAL
-# btn1  test routine
-#btn1test 
-#    sub R6 
-#    bneqi btn2test
 
-# btn 1 pressed routine
-#btn1pressed 
-#    rdw R2
-#    bneqi btn1notzero
-#    rdw R2          
-# speed to wr = old speed
-#    wrw R1  
-
-#btn1notzero
-#    rdw R2
-#    addi 1
-#    wrw R1
-
-# btn 2 test routine
-#btn2test 
-# reload btn state
-#    rdw R4 
-#    sub R7
-#    bneqi btn1alttest
-# btn 2 pressed routine
-#btn2pressed 
-#    ldi 7
-#    sub R2
-#    bneqi btn2not7
-#    rdw R2
-#    wrw R1
-
-#btn2not7
-#    rdw R2
-#    addi 1
-#    wrw R1
-
-##=============END NORMAL
-#=================TEST
 # btn1  test routine
 btn1test nop 
     rdw R4     
@@ -125,7 +87,7 @@ btn2test nop
 # btn 2 pressed routine
 btn2pressed nop
     rdw R2
-    sub R7           
+    sub R11           
     beqi dontupdate2
     rdw R2
     addi 1
@@ -136,27 +98,6 @@ btn2pressed nop
 dontupdate2 nop
     beqi speedupdate
 
-
-
-
-
-# btn 2 test routine
-btn2test nop
-# reload btn state
-    rdw R4 
-    sub R7
-    bneqi speedupdate
-# btn 2 pressed routine
-btn2pressed nop
-    ldi 7
-    wrw R1
-    
-#btn2not7
-#    rdw R2
-#    addi 1
-#    wrw R1
-
-#===============END TEST
 
 # btn 1 alt test routine
 #btn1alttest 
@@ -188,7 +129,8 @@ noupdate nop
 debounceLoop nop
     rdw R3
     sub R5
-    wrw R3 
+    wrw R3
+    rdw R3 
     bneqi debounceLoop 
     ldi 0
     beqi mainloop
