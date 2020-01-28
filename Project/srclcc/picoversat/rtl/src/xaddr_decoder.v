@@ -36,12 +36,15 @@ module xaddr_decoder (
                 output reg  sel_snd,
 
                 //switch selects
-                output reg kbd_sel,
+//                output reg kbd_sel,
 
                 //push-btn selects
-                output reg sw_sel
-                     );
-
+//                output reg sw_sel, 
+                     
+					input [3:0] btn_rd
+					);
+					
+				reg btn_sel;
    
    //select module
    always @* begin
@@ -52,9 +55,13 @@ module xaddr_decoder (
 `endif
 `ifndef NO_EXT
       ext_sel = 1'b0;
+		
+		
 `endif
       trap_sel = 1'b0;
-
+		sel_loop = 1'b0;
+		sel_snd = 1'b0;
+		btn_sel = 1'b0;
       //mask offset and compare with base
       if ( (addr & {  {`ADDR_W-`MEM_ADDR_W{1'b1}}, {`MEM_ADDR_W{1'b0}}  }) == `MEM_BASE)
         mem_sel = sel;
@@ -66,6 +73,8 @@ module xaddr_decoder (
         sel_snd = sel;
       else if ( (addr & {  {`ADDR_W-`LOOP_ADDR_W{1'b1}}, {`LOOP_ADDR_W{1'b0}}  }) == `LOOP_BASE)
         sel_loop = sel;
+	   else if ( (addr & {  {`ADDR_W-`PUSH_ADDR_W{1'b1}}, {`PUSH_ADDR_W{1'b0}}  }) == `PUSH_BASE)
+        btn_sel = sel;
 
 `ifdef DEBUG
       else if ( (addr &  {  {`ADDR_W-`CPRT_ADDR_W{1'b1}}, {`CPRT_ADDR_W{1'b0}}  }) == `CPRT_BASE)
@@ -83,6 +92,10 @@ module xaddr_decoder (
         data_to_rd = mem_data_to_rd;
       else if(regf_sel)
         data_to_rd = regf_data_to_rd;
+	  else if(btn_sel)
+//        data_to_rd = Psh;
+		  data_to_rd = btn_rd;
+		  
 `ifndef NO_EXT
       else if(ext_sel)
         data_to_rd = ext_data_to_rd;

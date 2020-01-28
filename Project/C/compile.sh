@@ -1,5 +1,5 @@
 
-/usr/local/versat/lcc/lcc -S -c test.c -o ../src/picoversat/tests/project/program.va
+/usr/local/versat/lcc/lcc -S -c project.c -o ../src/picoversat/tests/project/program.va
 cd ../src/picoversat/simulation/icarus
 make test="project"
 cd ../../../../C

@@ -1,8 +1,6 @@
 `timescale 1ns / 1ps
 `include "../include/xdefs.vh"
-`include "sequencer_loop_controller.v"
-`include "push_button_driver.v"
-`include "switch_driver.v"
+
 
 module xtop (
       input                clk,
@@ -10,7 +8,9 @@ module xtop (
       output               trap,
 		output 					snd,
       output [7:0]         Leds,
-      input [7:0]         sw
+      input [7:0]         sw,
+		
+		input [2:0]				pshbtn
       //output [3:0]         swFPGA
 
 
@@ -39,8 +39,8 @@ module xtop (
    wire 			   data_we;
    wire           loop_sel;
    wire           snd_sel;
-   wire           kbd_sel;
-   wire           sw_sel;
+//   wire           kbd_sel;
+//   wire           sw_sel;
    wire [`ADDR_W-1:0] 		  data_addr;
    wire [`DATA_W-1:0] 		  data_to_rd;
    wire [`DATA_W-1:0] 		  data_to_wr;
@@ -68,9 +68,10 @@ module xtop (
    assign par_out = data_to_wr;
    assign par_we = ext_sel & data_we;
 `endif
-   
-   wire [7:0] led_bus;
-   wire [7:0] kbd_bus;
+  
+//   wire [7:0] led_bus;
+//   wire [7:0] kbd_bus;
+//	wire [3:0] button_data_to_rd;
    //
    // CONTROLLER MODULE
    //
@@ -96,7 +97,7 @@ module xtop (
 
 	       // instruction interface
 	       .pc(pc),
-       	       .instruction(instruction),
+			 .instruction(instruction),
 
 	       //data interface 
 	       .data_sel(mem_sel),
@@ -157,10 +158,12 @@ module xtop (
                            .sel_snd(snd_sel),
 
                            //switch selects
-                           .kbd_sel(kbd_sel),
+//                           .kbd_sel(kbd_sel),
 
                            //push-btn selects
-                           .sw_sel(sw_sel)
+//                           .sw_sel(sw_sel),
+									
+									.btn_rd(pshbtn)
                         );
    
    //
@@ -182,24 +185,23 @@ module xtop (
 		.rst(rst)
    );
 
-   switch_driver xsw(
-      .sel(sw_sel),
-      //.kbd_in(sw),
-      .kbd_out(kbd_bus)
-      //.kbd_out(Leds)
-   );
+//   switch_driver xsw(
+//      .sel(sw_sel),
+//      //.kbd_in(sw),
+//      .kbd_out(kbd_bus)
+//      //.kbd_out(Leds)
+//   );
 
    //led_driver xled(
    //   .data_in(led_bus),
    //   .led_out(Leds)
    //);
 
-   push_button_driver xpush(
-      .sel(sw_sel),
-      .sw_in(swFPGA),
-      //.sw_out(data_to_rd[3:0]),
-      .clk(clk)
-   );
+//   push_button_driver xpush(
+//      .sw_in(psh),
+//      .sw_out(button_data_to_rd[2:0]),
+//      .clk(clk)
+//   );
 
 
 

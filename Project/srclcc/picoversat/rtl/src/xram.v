@@ -60,7 +60,7 @@ module xram (
    
    // init RAM
    initial begin
-      $readmemh("INPUT",mem,0,2**(`ADDR_W-1)-1);
+      $readmemh("program.hex",mem,0,2**(`ADDR_W-1)-1);
     end
 
    //instruction port
