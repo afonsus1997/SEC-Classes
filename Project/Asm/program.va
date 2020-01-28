@@ -1,6 +1,3 @@
-#debouncetm .memset 0x40000
-#loopAddr .memset  0x813
-#pushAddr .memset 0x811
 
 #R1 - speed to write
 #R2 - last speed
@@ -16,7 +13,12 @@
 
 #R10 - general purpose
 
-#R11 - max compare
+#R11 - max compare loop
+
+#R12 - sound to write
+#R13 - last sound
+
+#R14 - max compare snd
 
 initializations nop
     ldi 0
@@ -25,6 +27,10 @@ initializations nop
     wrw R2
     ldi 0
     wrw R4
+    ldi 0
+    wrw R12
+    ldi 0
+    wrw R13
 
 #ldi debouncetm
 #wrw R3
@@ -42,22 +48,26 @@ initializations nop
     wrw R9
     ldi 7
     wrw R11
+    ldi 15
+    wrw R14
+
 
     ldi 0
     wrw LOOP_BASE
-
+    ldi 0
+    wrw SND_BASE
 
 # main loop
 mainloop nop
-#    ldi 262144
-#    ldi 393216
     ldi 0xFFFFF
     wrw R3
     rdw PUSH_BASE 
-#    rdw
+
 #store push button state on r4
     wrw R4 
 
+
+#CHECK MAIN BUTTONS
 # btn1  test routine
 btn1test nop 
     rdw R4     
@@ -82,7 +92,7 @@ dontupdate1 nop
 btn2test nop 
     rdw R4     
     sub R7 
-    bneqi speedupdate
+    bneqi btn1alttest
 
 # btn 2 pressed routine
 btn2pressed nop
@@ -99,17 +109,48 @@ dontupdate2 nop
     beqi speedupdate
 
 
-# btn 1 alt test routine
-#btn1alttest 
-#    rdw R4 # reload btn state
-#    sub R8
-#    bneqi btn2alttest
-#btn1altpressed # btn 1 alt pressed routine
+#========BUTTON COMBOS========
 
-#btn1alttest # btn 2 alt test routine
-#    rdw R4 # reload btn state
-#    sub R9
-#btn2altpressed # btn 2 alt pressed routine
+
+# btn1alt  test routine
+btn1alttest nop 
+    rdw R4     
+    sub R8 
+    bneqi btn2alttest
+
+# btn 1alt pressed routine
+btn1altpressed nop
+    rdw R13
+    sub R14           
+    beqi dontupdate1alt
+    rdw R13
+    addi 1
+    wrw R12
+    ldi 0
+    beqi soundupdate
+
+dontupdate1alt nop
+    beqi soundupdate
+
+# btn2alt  test routine
+btn2alttest nop 
+    rdw R4     
+    sub R9 
+    bneqi soundupdate
+
+# btn 2alt pressed routine
+btn2altpressed nop
+    rdw R13           
+    beqi dontupdate2alt
+    rdw R13
+    sub R5
+    wrw R12
+    ldi 0
+    beqi soundupdate
+
+dontupdate2alt nop
+    beqi soundupdate
+
 
 
 #update speed
@@ -123,6 +164,19 @@ speedupdate nop
 noupdate nop
     rdw R1
     wrw R2
+
+
+#update sound
+soundupdate nop
+    rdw R12
+    sub R13
+    beqi noupdatesnd
+    rdw R12
+    wrw SND_BASE
+#update old speed
+noupdatesnd nop
+    rdw R12
+    wrw R13
 
 #rdw R3
 # debounce loop
