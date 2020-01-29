@@ -1,13 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.28)  29 JAN 2020 17:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.28)  29 JAN 2020 17:26
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/afonsom/Github/SEC-Classes/Project/docs/ug/ug.tex
-(/home/afonsom/Github/SEC-Classes/Project/docs/ug/ug.tex
+**ug.tex
+(./ug.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
-(/home/afonsom/Github/SEC-Classes/Project/docs/ug/ug.cls (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+(./ug.cls (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
@@ -27,26 +26,34 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 Document Class: ug 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
- (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
-) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
-) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footers
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
 \f@nch@headwidth=\skip43
 \f@nch@O@elh=\skip44
 \f@nch@O@erh=\skip45
@@ -56,14 +63,18 @@ Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footers
 \f@nch@O@erf=\skip49
 \f@nch@O@olf=\skip50
 \f@nch@O@orf=\skip51
-) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
- (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
-) (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count87
@@ -78,11 +89,15 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen111
 \Gm@layoutvoffset=\dimen112
 \Gm@dimlist=\toks15
-) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
- (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
@@ -99,13 +114,15 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO)
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+)
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
 Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
 Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
 )
@@ -118,19 +135,23 @@ Package atveryend Info: \enddocument detected (standard20110627).
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen113
 \Hy@linkcounter=\count90
 \Hy@pagecounter=\count91
- (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count92
- (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4509.
@@ -141,7 +162,8 @@ Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4762.
 \c@Hy@tempcnt=\count93
- (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -164,22 +186,27 @@ LaTeX Info: Redefining \pageref on input line 6443.
 \c@Hfootnote=\count97
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
 \Fld@listcount=\count98
 \c@bookmark@seq@number=\count99
- (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
 )
 \Hy@SectionHShift=\skip52
-) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@colwidth=\skip53
 \multirow@cntb=\count100
 \multirow@dima=\skip54
 \bigstrutjot=\dimen117
-) (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks16
 \verbatim@line=\toks17
@@ -208,10 +235,7 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \@thisruleclass=\count103
 \@lastruleclass=\count104
 \@thisrulewidth=\dimen130
-) (/home/afonsom/Github/SEC-Classes/Project/docs/ug/ug.aux
-
-LaTeX Warning: Label `fig:periphs' multiply defined.
-
+) (./ug.aux
 
 LaTeX Warning: Label `fig:periphs' multiply defined.
 
@@ -238,7 +262,8 @@ LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Try loading font information for OT1+phv on input line 7.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
-) (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count105
 \scratchdimen=\dimen131
@@ -253,15 +278,20 @@ File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 \everyMPtoPDFconversion=\toks19
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
- (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
 Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
- (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
 ))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -301,7 +331,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 Package hyperref Info: Link coloring OFF on input line 7.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
- (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count111
@@ -309,13 +340,14 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 7.
 LaTeX Info: Redefining \pageref on input line 7.
 LaTeX Info: Redefining \nameref on input line 7.
- (/home/afonsom/Github/SEC-Classes/Project/docs/ug/ug.out) (/home/afonsom/Github/SEC-Classes/Project/docs/ug/ug.out)
+
+(./ug.out) (./ug.out)
 \@outlinefile=\write3
 \openout3 = `ug.out'.
 
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <24.88> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 9.
-<./figures/Logo.png, id=52, 94.10156pt x 103.88812pt>
+<./figures/Logo.png, id=40, 94.10156pt x 103.88812pt>
 File: ./figures/Logo.png Graphic file (type png)
 <use ./figures/Logo.png>
 Package pdftex.def Info: ./figures/Logo.png  used on input line 9.
@@ -351,7 +383,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ]
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 12.
- (/home/afonsom/Github/SEC-Classes/Project/docs/ug/ug.toc)
+ (./ug.toc)
 \tf@toc=\write4
 \openout4 = `ug.toc'.
 
@@ -359,7 +391,8 @@ File: ./figures/Logo.png Graphic file (type png)
 <use ./figures/Logo.png>
 Package pdftex.def Info: ./figures/Logo.png  used on input line 13.
 (pdftex.def)             Requested size: 23.52533pt x 25.97195pt.
- [3] (/home/afonsom/Github/SEC-Classes/Project/docs/ug/ug.lot)
+
+[3] (./ug.lot)
 \tf@lot=\write5
 \openout5 = `ug.lot'.
 
@@ -369,7 +402,7 @@ Package pdftex.def Info: ./figures/Logo.png  used on input line 15.
 (pdftex.def)             Requested size: 23.52533pt x 25.97195pt.
  [4
 
-] (/home/afonsom/Github/SEC-Classes/Project/docs/ug/ug.lof)
+] (./ug.lof)
 \tf@lof=\write6
 \openout6 = `ug.lof'.
 
@@ -386,13 +419,13 @@ Package pdftex.def Info: ./figures/Logo.png  used on input line 17.
 (pdftex.def)             Requested size: 23.52533pt x 25.97195pt.
  [6
 
-] (/home/afonsom/Github/SEC-Classes/Project/docs/ug/intro.tex) (/home/afonsom/Github/SEC-Classes/Project/docs/ug/bd.tex
-<./figures/bdboard.png, id=129, 144.54pt x 89.58469pt>
+] (./intro.tex) (./bd.tex
+<./figures/bdboard.png, id=110, 144.54pt x 89.58469pt>
 File: ./figures/bdboard.png Graphic file (type png)
 <use ./figures/bdboard.png>
 Package pdftex.def Info: ./figures/bdboard.png  used on input line 14.
 (pdftex.def)             Requested size: 144.53963pt x 89.58446pt.
-<./figures/periphmoddiag.pdf, id=130, 442.53331pt x 399.41219pt>
+<./figures/periphmoddiag.pdf, id=111, 442.53331pt x 399.41219pt>
 File: ./figures/periphmoddiag.pdf Graphic file (type pdf)
 <use ./figures/periphmoddiag.pdf>
 Package pdftex.def Info: ./figures/periphmoddiag.pdf  used on input line 28.
@@ -409,20 +442,24 @@ File: ./figures/Logo.png Graphic file (type png)
 Package pdftex.def Info: ./figures/Logo.png  used on input line 39.
 (pdftex.def)             Requested size: 23.52533pt x 25.97195pt.
  [7 <./figures/bdboard.png>]
-<./figures/SequencerLoopcontroler.png, id=139, 227.34938pt x 166.37157pt>
+<./figures/SequencerLoopcontroler.png, id=120, 227.34938pt x 166.37157pt>
 File: ./figures/SequencerLoopcontroler.png Graphic file (type png)
 <use ./figures/SequencerLoopcontroler.png>
-Package pdftex.def Info: ./figures/SequencerLoopcontroler.png  used on input line 44.
+Package pdftex.def Info: ./figures/SequencerLoopcontroler.png  used on input li
+ne 44.
 (pdftex.def)             Requested size: 113.67441pt x 83.18556pt.
-<./figures/periphs_interconn.png, id=140, 289.08pt x 220.57407pt>
+<./figures/periphs_interconn.png, id=121, 289.08pt x 220.57407pt>
 File: ./figures/periphs_interconn.png Graphic file (type png)
 <use ./figures/periphs_interconn.png>
-Package pdftex.def Info: ./figures/periphs_interconn.png  used on input line 79.
+Package pdftex.def Info: ./figures/periphs_interconn.png  used on input line 79
+.
 (pdftex.def)             Requested size: 144.53964pt x 110.28676pt.
-<./figures/Sequencer_loop_controller_flux.pdf, id=141, 741.73106pt x 421.575pt>
+<./figures/Sequencer_loop_controller_flux.pdf, id=122, 741.73106pt x 421.575pt>
+
 File: ./figures/Sequencer_loop_controller_flux.pdf Graphic file (type pdf)
 <use ./figures/Sequencer_loop_controller_flux.pdf>
-Package pdftex.def Info: ./figures/Sequencer_loop_controller_flux.pdf  used on input line 85.
+Package pdftex.def Info: ./figures/Sequencer_loop_controller_flux.pdf  used on 
+input line 85.
 (pdftex.def)             Requested size: 296.68716pt x 168.627pt.
 File: ./figures/Logo.png Graphic file (type png)
 <use ./figures/Logo.png>
@@ -430,83 +467,82 @@ Package pdftex.def Info: ./figures/Logo.png  used on input line 94.
 (pdftex.def)             Requested size: 23.52533pt x 25.97195pt.
  [8 <./figures/periphmoddiag.pdf
 
-pdfTeX warning: pdflatex (file ./figures/periphmoddiag.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
+pdfTeX warning: pdflatex (file ./figures/periphmoddiag.pdf): PDF inclusion: inv
+alid other resource which is no dict (key 'ProcSets', type <array>); ignored.
 > <./figures/SequencerLoopcontroler.png>]
 File: ./figures/Logo.png Graphic file (type png)
 <use ./figures/Logo.png>
 Package pdftex.def Info: ./figures/Logo.png  used on input line 94.
 (pdftex.def)             Requested size: 23.52533pt x 25.97195pt.
- [9 <./figures/periphs_interconn.png> <./figures/Sequencer_loop_controller_flux.pdf
+ [9 <./figures/periphs_interconn.png> <./figures/Sequencer_loop_controller_flux
+.pdf
 
-pdfTeX warning: pdflatex (file ./figures/Sequencer_loop_controller_flux.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
+pdfTeX warning: pdflatex (file ./figures/Sequencer_loop_controller_flux.pdf): P
+DF inclusion: invalid other resource which is no dict (key 'ProcSets', type <ar
+ray>); ignored.
 >]
-<./figures/periphs.pdf, id=189, 631.62274pt x 289.05154pt>
+<./figures/periphs.pdf, id=170, 631.62274pt x 289.05154pt>
 File: ./figures/periphs.pdf Graphic file (type pdf)
 <use ./figures/periphs.pdf>
 Package pdftex.def Info: ./figures/periphs.pdf  used on input line 112.
 (pdftex.def)             Requested size: 442.1329pt x 202.33469pt.
-
-Overfull \hbox (44.83739pt too wide) in paragraph at lines 125--135
+File: ./figures/Logo.png Graphic file (type png)
+<use ./figures/Logo.png>
+Package pdftex.def Info: ./figures/Logo.png  used on input line 117.
+(pdftex.def)             Requested size: 23.52533pt x 25.97195pt.
+ [10 <./figures/periphs.pdf>]
+Overfull \hbox (335.05846pt too wide) in paragraph at lines 130--140
  [][] 
  []
 
-<./figures/picoversat_flux.pdf, id=190, 695.7192pt x 399.41219pt>
+<./figures/picoversat_flux.pdf, id=187, 695.7192pt x 399.41219pt>
 File: ./figures/picoversat_flux.pdf Graphic file (type pdf)
 <use ./figures/picoversat_flux.pdf>
-Package pdftex.def Info: ./figures/picoversat_flux.pdf  used on input line 143.
+Package pdftex.def Info: ./figures/picoversat_flux.pdf  used on input line 150.
+
 (pdftex.def)             Requested size: 278.28275pt x 159.76204pt.
+) (./periphs.tex) (./progex.tex)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 31.
 File: ./figures/Logo.png Graphic file (type png)
 <use ./figures/Logo.png>
-Package pdftex.def Info: ./figures/Logo.png  used on input line 146.
-(pdftex.def)             Requested size: 23.52533pt x 25.97195pt.
-[10 <./figures/periphs.pdf>]) (/home/afonsom/Github/SEC-Classes/Project/docs/ug/periphs.tex
-File: ./figures/periphs_interconn.png Graphic file (type png)
-<use ./figures/periphs_interconn.png>
-Package pdftex.def Info: ./figures/periphs_interconn.png  used on input line 9.
-(pdftex.def)             Requested size: 144.53964pt x 110.28676pt.
-) (/home/afonsom/Github/SEC-Classes/Project/docs/ug/is.tex) (/home/afonsom/Github/SEC-Classes/Project/docs/ug/mem_map.tex) (/home/afonsom/Github/SEC-Classes/Project/docs/ug/isa.tex) (/home/afonsom/Github/SEC-Classes/Project/docs/ug/progex.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 37.
-
-Underfull \vbox (badness 3039) has occurred while \output is active []
-
-File: ./figures/Logo.png Graphic file (type png)
-<use ./figures/Logo.png>
-Package pdftex.def Info: ./figures/Logo.png  used on input line 37.
+Package pdftex.def Info: ./figures/Logo.png  used on input line 31.
 (pdftex.def)             Requested size: 23.52533pt x 25.97195pt.
  [11 <./figures/picoversat_flux.pdf
 
-pdfTeX warning: pdflatex (file ./figures/picoversat_flux.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
+pdfTeX warning: pdflatex (file ./figures/picoversat_flux.pdf): PDF inclusion: i
+nvalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
+
 >]
-File: ./figures/Logo.png Graphic file (type png)
-<use ./figures/Logo.png>
-Package pdftex.def Info: ./figures/Logo.png  used on input line 37.
-(pdftex.def)             Requested size: 23.52533pt x 25.97195pt.
- [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 37.
- (/home/afonsom/Github/SEC-Classes/Project/docs/ug/ug.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 37.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 37.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 31.
+ (./ug.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 31.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 31.
 Package rerunfilecheck Info: File `ug.out' has not changed.
-(rerunfilecheck)             Checksum: 04D332DF03A662DFC754791F84481827;713.
+(rerunfilecheck)             Checksum: B28730D641CA0134985601EEC2C1FA22;556.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 37.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 31.
  ) 
 Here is how much of TeX's memory you used:
- 5952 strings out of 492982
- 89952 string characters out of 6134896
- 179034 words of memory out of 5000000
- 9390 multiletter control sequences out of 15000+600000
+ 5929 strings out of 492982
+ 88068 string characters out of 6134896
+ 177881 words of memory out of 5000000
+ 9383 multiletter control sequences out of 15000+600000
  21798 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,15n,45p,513b,408s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on /home/afonsom/Github/SEC-Classes/Project/docs/ug/ug.pdf (12 pages, 262923 bytes).
+ 35i,15n,45p,464b,408s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helveti
+c/uhvro8a.pfb>
+Output written on ug.pdf (11 pages, 260378 bytes).
 PDF statistics:
- 264 PDF objects out of 1000 (max. 8388607)
- 213 compressed objects within 3 object streams
- 40 named destinations out of 1000 (max. 500000)
- 137 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 235 PDF objects out of 1000 (max. 8388607)
+ 186 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 

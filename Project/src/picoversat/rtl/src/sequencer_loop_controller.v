@@ -206,7 +206,7 @@ module sequencer_loop_controller(
       if(rst) begin
 			loop_counter <= 0;
 			curr_sft <= 0;
-			scroll_out <= 8'b10000000;
+			scroll_out <= 8'b10000000;		
 			curr_sft<=0;
 			old_loop <=0;
 		end

@@ -1,3 +1,5 @@
+# - NOPs are present at each at the start of each routine for testing purposes and for ease of editing, this not affect the program performance. Can be removed.
+
 
 #R1 - speed to write
 #R2 - last speed
