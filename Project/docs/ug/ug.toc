@@ -5,8 +5,8 @@
 \contentsline {subsection}{\numberline {3.2}Picoversat}{10}{subsection.3.2}
 \contentsline {subsubsection}{\numberline {3.2.1}General Purpose Register File}{10}{subsubsection.3.2.1}
 \contentsline {subsubsection}{\numberline {3.2.2}Debug Printer}{10}{subsubsection.3.2.2}
-\contentsline {subsection}{\numberline {3.3}Block Diagram}{11}{subsection.3.3}
-\contentsline {section}{\numberline {4}Interface Signals}{12}{section.4}
-\contentsline {section}{\numberline {5}Memory Map}{12}{section.5}
+\contentsline {subsubsection}{\numberline {3.2.3}Software}{10}{subsubsection.3.2.3}
+\contentsline {section}{\numberline {4}Interface Signals}{11}{section.4}
+\contentsline {section}{\numberline {5}Memory Map}{11}{section.5}
 \contentsline {section}{\numberline {6}Implementation Results}{12}{section.6}
 \contentsline {section}{\numberline {7}Conclusions}{12}{section.7}
