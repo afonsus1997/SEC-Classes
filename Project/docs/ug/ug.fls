@@ -176,14 +176,14 @@ INPUT ./figures/periphs.pdf
 INPUT /home/afonsom/Github/SEC-Classes/Project/docs/ug/./figures/picoversat_flux.pdf
 INPUT ./figures/picoversat_flux.pdf
 INPUT ./figures/picoversat_flux.pdf
+INPUT /home/afonsom/Github/SEC-Classes/Project/docs/ug/./figures/Logo.png
+INPUT ./figures/Logo.png
 INPUT /home/afonsom/Github/SEC-Classes/Project/docs/ug/periphs.tex
 INPUT /home/afonsom/Github/SEC-Classes/Project/docs/ug/periphs.tex
 INPUT /home/afonsom/Github/SEC-Classes/Project/docs/ug/./figures/periphs_interconn.png
 INPUT ./figures/periphs_interconn.png
 INPUT /home/afonsom/Github/SEC-Classes/Project/docs/ug/is.tex
 INPUT /home/afonsom/Github/SEC-Classes/Project/docs/ug/is.tex
-INPUT /home/afonsom/Github/SEC-Classes/Project/docs/ug/./figures/Logo.png
-INPUT ./figures/Logo.png
 INPUT /home/afonsom/Github/SEC-Classes/Project/docs/ug/mem_map.tex
 INPUT /home/afonsom/Github/SEC-Classes/Project/docs/ug/mem_map.tex
 INPUT /home/afonsom/Github/SEC-Classes/Project/docs/ug/isa.tex

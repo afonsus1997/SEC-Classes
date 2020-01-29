@@ -114,10 +114,30 @@ All of the aforementioned peripherals connect to the picoversat as described bel
   \label{fig:periphs}
 \end{figure}
 
+The final memory map is represented on following table:
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[!htbp]
+  \centering
+  \caption{Memmory map}
+  \label{tab:memmap}
+  \begin{tabular}{@{}lcccl@{}}
+  \toprule
+  Mnemonic   & \multicolumn{1}{l}{Address} & \multicolumn{1}{l}{Read/Write} & \multicolumn{1}{l}{Read/Write Latency} & Description                                           \\ \midrule
+  SND\_BASE  & 0x25E                       & Write only                     & 0                                      & Sound frequency address for sequencer loop controller \\
+  LOOP\_BASE & 0x25C                       & Write only                     & 0                                      & Loop frequency address for sequencer loop controller  \\
+  PUSH\_BASE & 0x25A                       & Read only                      & 0                                      & Push-button peripheral                                \\
+  CPRT\_BASE & 0x258                       & Read only                      & N/A                                    & Debug printer peripheral                              \\
+  REGF\_BASE & 0x200                       & Read+Write                     & 0                                      & Register file peripheral                              \\
+  PROG\_BASE & 0x0                         & Read+Write                     & 1                                      & User program and data                                 \\ \bottomrule
+  \end{tabular}
+  \end{table}
 
 \subsubsection{Software}
 
-
+The picoversat was firstly developed in C and cross-compiled into picoversat assembly using the lcc compiler. Unfortunately due to some setbacks with the lcc code file size and picoversat's memory size, the code was implemented again from scratch in assembly. This resulted in a smaller and better optimized program.
+The general program logic is represented below:
 
 \begin{figure}[htbp]
   \centerline{\includegraphics[scale=0.4]{picoversat_flux.pdf}}

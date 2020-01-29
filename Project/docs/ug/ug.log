@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.28)  29 JAN 2020 17:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.28)  29 JAN 2020 17:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -445,32 +445,29 @@ File: ./figures/periphs.pdf Graphic file (type pdf)
 <use ./figures/periphs.pdf>
 Package pdftex.def Info: ./figures/periphs.pdf  used on input line 112.
 (pdftex.def)             Requested size: 442.1329pt x 202.33469pt.
+
+Overfull \hbox (44.83739pt too wide) in paragraph at lines 125--135
+ [][] 
+ []
+
 <./figures/picoversat_flux.pdf, id=190, 695.7192pt x 399.41219pt>
 File: ./figures/picoversat_flux.pdf Graphic file (type pdf)
 <use ./figures/picoversat_flux.pdf>
-Package pdftex.def Info: ./figures/picoversat_flux.pdf  used on input line 123.
+Package pdftex.def Info: ./figures/picoversat_flux.pdf  used on input line 143.
 (pdftex.def)             Requested size: 278.28275pt x 159.76204pt.
-) (/home/afonsom/Github/SEC-Classes/Project/docs/ug/periphs.tex
+File: ./figures/Logo.png Graphic file (type png)
+<use ./figures/Logo.png>
+Package pdftex.def Info: ./figures/Logo.png  used on input line 146.
+(pdftex.def)             Requested size: 23.52533pt x 25.97195pt.
+[10 <./figures/periphs.pdf>]) (/home/afonsom/Github/SEC-Classes/Project/docs/ug/periphs.tex
 File: ./figures/periphs_interconn.png Graphic file (type png)
 <use ./figures/periphs_interconn.png>
 Package pdftex.def Info: ./figures/periphs_interconn.png  used on input line 9.
 (pdftex.def)             Requested size: 144.53964pt x 110.28676pt.
-) (/home/afonsom/Github/SEC-Classes/Project/docs/ug/is.tex
-Underfull \vbox (badness 1043) has occurred while \output is active []
-
-File: ./figures/Logo.png Graphic file (type png)
-<use ./figures/Logo.png>
-Package pdftex.def Info: ./figures/Logo.png  used on input line 21.
-(pdftex.def)             Requested size: 23.52533pt x 25.97195pt.
- [10 <./figures/periphs.pdf>]) (/home/afonsom/Github/SEC-Classes/Project/docs/ug/mem_map.tex
-Overfull \hbox (44.83739pt too wide) in paragraph at lines 12--23
- [][] 
- []
-
-) (/home/afonsom/Github/SEC-Classes/Project/docs/ug/isa.tex) (/home/afonsom/Github/SEC-Classes/Project/docs/ug/progex.tex)
+) (/home/afonsom/Github/SEC-Classes/Project/docs/ug/is.tex) (/home/afonsom/Github/SEC-Classes/Project/docs/ug/mem_map.tex) (/home/afonsom/Github/SEC-Classes/Project/docs/ug/isa.tex) (/home/afonsom/Github/SEC-Classes/Project/docs/ug/progex.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 37.
 
-Underfull \vbox (badness 6575) has occurred while \output is active []
+Underfull \vbox (badness 3039) has occurred while \output is active []
 
 File: ./figures/Logo.png Graphic file (type png)
 <use ./figures/Logo.png>
@@ -506,7 +503,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  35i,15n,45p,513b,408s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on /home/afonsom/Github/SEC-Classes/Project/docs/ug/ug.pdf (12 pages, 262617 bytes).
+Output written on /home/afonsom/Github/SEC-Classes/Project/docs/ug/ug.pdf (12 pages, 262923 bytes).
 PDF statistics:
  264 PDF objects out of 1000 (max. 8388607)
  213 compressed objects within 3 object streams
