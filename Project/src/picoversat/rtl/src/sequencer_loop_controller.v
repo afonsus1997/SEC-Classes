@@ -25,38 +25,28 @@ module sequencer_loop_controller(
     output [7:0] led_out,
     input rst
 );
-	 reg snd_gen;
+	reg snd_gen;
     reg [27:0] snd_counter;
-	 reg [20:0] snd_freq_counter;
+	reg [20:0] snd_freq_counter;
     reg [27:0] loop_counter;
-	 reg [7:0] scroll_out;
-//	 reg [7:0] curr_sw;
-	 reg [4:0] curr_sft;
-	 reg snd_en;
-//	 reg snd_en_h;
-	 
-	 
-//	 reg [7:0] freqinreg;
-//	 reg [7:0] sweepreg;
-//	 wire [7:0] sndenreg;
+	reg [7:0] scroll_out;
+	reg [4:0] curr_sft;
+	reg snd_en;
+
     reg [31:0] freq;
-	 reg [25:0] sweep;
-	 wire [25:0] snd_en_time;
+	reg [25:0] sweep;
+	reg [25:0] snd_en_time;
     reg [7:0] old_loop;
 	
-	
-	 
-	 //assign step = freqin; 
-	 //reg bug;
-	//assign led_out = loop_counter[15:7];
+
 	assign led_out = scroll_out | kbd_in;
-	//assign bug = kbd_in & scroll_out;
+
 	assign snd_out = snd_gen & snd_en & ((kbd_in >> curr_sft) & 1);
 	
-//	assign sndenreg = sweep;
+    //	assign sndenreg = sweep;
 	
-`ifdef sim
-	always @(posedge sel_snd, posed) begin
+`ifdef sim //used for simulation purposes, small delays
+	always @(posedge sel_snd, posedge rst) begin
 //		if(sel_snd) begin
 			case(freqin)
 				8'd0 : freq <= 20'd1;
@@ -112,7 +102,7 @@ module sequencer_loop_controller(
 	
 `endif
 
-`ifdef normal
+`ifdef normal //normal operation
 	always @(posedge sel_snd, posedge rst) begin
 		if(rst)
 			freq <= 17'h186A0;
@@ -139,9 +129,9 @@ module sequencer_loop_controller(
 	end
 	
 	
-	assign snd_en_time = sweep << 4;
+	//assign snd_en_time = sweep << 3;
 	
-	always @(posedge clk) begin
+	always @(posedge sel_loop, posedge rst) begin
 		if(rst)
 			sweep <= 26'h5F5E10;
 		else if(sel_loop) begin
@@ -155,6 +145,18 @@ module sequencer_loop_controller(
 				8'd6 : sweep <= 26'h17D7840;
 				8'd7 : sweep <= 26'h2FAF080;
 			endcase	
+		
+			case(freqin)
+				8'd0 : snd_en_time <= 25'h2FAF08;
+				8'd1 : snd_en_time <= 25'h367EE4;
+				8'd2 : snd_en_time <= 25'h3F940A;
+				8'd3 : snd_en_time <= 25'h4C4B40;
+				8'd4 : snd_en_time <= 25'h5F5E10;
+				8'd5 : snd_en_time <= 25'h7F2815;
+				8'd6 : snd_en_time <= 25'hBEBC20;
+				8'd7 : snd_en_time <= 25'h17D7840;
+			endcase
+		
 		end
 		
 	
@@ -163,7 +165,7 @@ module sequencer_loop_controller(
 	
 `endif
 	
-`ifdef 32bit
+`ifdef 32bit //Timing information recieved from picoversat, implemented but not used
 
 	always @(posedge clk) begin
 		if(sel_snd) begin
@@ -205,8 +207,6 @@ module sequencer_loop_controller(
 			loop_counter <= 0;
 			curr_sft <= 0;
 			scroll_out <= 8'b10000000;
-//			sweepreg <= 0;
-//			curr_sw<=0;
 			curr_sft<=0;
 			old_loop <=0;
 		end

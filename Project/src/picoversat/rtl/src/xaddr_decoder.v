@@ -1,6 +1,7 @@
 `include "../include/xdefs.vh"
 `timescale 1ns / 1ps
 
+
 module xaddr_decoder (
 	             // address and global select signal
 	              input [`ADDR_W-1:0] addr,
@@ -84,6 +85,11 @@ module xaddr_decoder (
           trap_sel = sel;
    end
 
+	
+
+
+
+
    //select data to read
    always @(*) begin
       data_to_rd = `DATA_W'd0;
@@ -93,9 +99,7 @@ module xaddr_decoder (
       else if(regf_sel)
         data_to_rd = regf_data_to_rd;
 	  else if(btn_sel)
-//        data_to_rd = Psh;
 		  data_to_rd = btn_rd;
-		  
 `ifndef NO_EXT
       else if(ext_sel)
         data_to_rd = ext_data_to_rd;

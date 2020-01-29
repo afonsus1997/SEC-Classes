@@ -2,6 +2,8 @@
 
 `include "../include/xdefs.vh"
 
+`define sim
+
 module xtop_tb;
    
    //parameters 

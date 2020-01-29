@@ -1,0 +1,15 @@
+\contentsline {section}{\numberline {1}Introduction}{7}{section.1}
+\contentsline {section}{\numberline {2}Sequencer operation}{7}{section.2}
+\contentsline {section}{\numberline {3}Implementation}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Block Diagram}{10}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Peripherals}{10}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}General Purpose Register File}{10}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Debug Printer}{11}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Sequencer Loop Controller}{11}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}LED Driver}{11}{subsubsection.3.2.4}
+\contentsline {subsubsection}{\numberline {3.2.5}Switch Driver}{12}{subsubsection.3.2.5}
+\contentsline {subsubsection}{\numberline {3.2.6}Push-Button Driver}{12}{subsubsection.3.2.6}
+\contentsline {section}{\numberline {4}Interface Signals}{12}{section.4}
+\contentsline {section}{\numberline {5}Memory Map}{14}{section.5}
+\contentsline {section}{\numberline {6}Implementation Results}{15}{section.6}
+\contentsline {section}{\numberline {7}Conclusions}{15}{section.7}

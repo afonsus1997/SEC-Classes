@@ -1,8 +1,0 @@
-MO switch_driver NULL rtl/src/switch_driver.v vlg61/switch__driver.bin 1574697503
-MO xtop NULL rtl/src/xtop.v vlg07/xtop.bin 1574697503
-MO xctrl NULL rtl/src/xctrl.v vlg49/xctrl.bin 1574697503
-MO xaddr_decoder NULL rtl/src/xaddr_decoder.v vlg54/xaddr__decoder.bin 1574697503
-MO push_button_driver NULL rtl/src/push_button_driver.v vlg42/push__button__driver.bin 1574697503
-MO sequencer_loop_controller NULL rtl/src/sequencer_loop_controller.v vlg6B/sequencer__loop__controller.bin 1574697503
-MO xram NULL rtl/src/xram.v vlg0C/xram.bin 1574697503
-MO xregf NULL rtl/src/xregf.v vlg68/xregf.bin 1574697503

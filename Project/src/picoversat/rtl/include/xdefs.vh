@@ -7,10 +7,14 @@
 `define DATA_W 32 // bits
 
 
+`ifndef bigram
 // ADDRESS WIDTH
 `define ADDR_W 10
+`endif
 
-
+`ifdef bigram
+`define ADDR_W 11
+`endif
 
 
 // MODULE SELECT ADDR WIDTH
@@ -25,6 +29,7 @@
 //
 // MEMORY MAP
 //
+`ifndef bigram
 `define MEM_BASE 0 //instruction and data memory
 `define MEM_ADDR_W 9 //512 positions (2kB)
 
@@ -37,9 +42,6 @@
 `define PUSH_BASE 602 //0x25A
 `define PUSH_ADDR_W 0 //only one address
 
-`define SW_BASE 603 //0x25B
-`define SW_ADDR_W 0 //only one address
-
 `define LOOP_BASE 604 //0x25C
 `define LOOP_ADDR_W 0 //only one address
 
@@ -50,6 +52,30 @@
 `define NO_EXT 1
 
 `define TRAP_BASE 1023
+`endif
+
+`ifdef bigram
+`define MEM_BASE 0 //instruction and data memory
+`define MEM_ADDR_W 10 //512 positions (2kB)
+
+`define REGF_BASE 1024 //registers 0x200
+`define REGF_ADDR_W 4 //2**4 = 16 registers
+
+`define CPRT_BASE 1040 //0x258
+`define CPRT_ADDR_W 0 //only one address
+
+`define PUSH_BASE 1041 //0x25A
+`define PUSH_ADDR_W 0 //only one address
+
+`define SW_BASE 1042 //0x25B
+`define SW_ADDR_W 0 //only one address
+
+`define LOOP_BASE 1043 //0x25C
+`define LOOP_ADDR_W 0 //only one address
+
+`define SND_BASE 1044 //0x25D
+`define SND_ADDR_W 0 //only one address
+`endif
 
 // Instruction width 
 `define INSTR_W 32

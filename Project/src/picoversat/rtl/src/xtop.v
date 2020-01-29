@@ -118,7 +118,24 @@ module xtop (
 	       .data_out(regf_data_to_rd)
 	       );
 
-
+	
+	
+//	
+//	reg [2:0] fakepsh;
+//	
+//	initial begin
+//		fakepsh <= 1;
+//	end
+//	
+//	
+//	always @(posedge clk) begin
+//		
+//			fakepsh <= fakepsh << 1;
+//		
+//	end
+//	
+	
+	
    
 
    // INTERNAL ADDRESS DECODER
@@ -163,7 +180,10 @@ module xtop (
                            //push-btn selects
 //                           .sw_sel(sw_sel),
 									
+//									.btn_rd(fakepsh)
+
 									.btn_rd(pshbtn)
+
                         );
    
    //

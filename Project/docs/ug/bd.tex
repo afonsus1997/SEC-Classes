@@ -1,46 +1,103 @@
 
 \section{Sequencer operation}
 
-Since the sequencer depends on multiple time-dependant routines and there is no trivial way to deal with this on the picoversat controller (because of the lack of interrupts), the main logic is divided into two routines: one for the main sequencer loop, implemented as a standalone peripheral, and other for the reading and debouncing of the switches, pushbuttons and for data handling (frequencies).
 
-\begin{figure}[!htbp]
-  \centerline{\includegraphics[scale=1.5]{Picoversatflux.pdf}}
-  \vspace{0cm}\caption{Picoversat code fluxogram.}
-  \label{fig:bd}
+
+In normal operation, the sequencer will loop through all the steps in a cyclic fashion, the current step can be seen by the indicated LED. In order to to create a rythm, the user can activate the desired steps by activating the correspondant switch. The activated steps are indicated by their correspondant LEDs being on.  
+
+The sound output of the signal is a DC biased square wave outputted by an IO pin of the Basys 2 Board, this should be connected to and external powered speaker in order to the sound to be apmplified and filtered.
+
+
+Figure~\ref{fig:bdbasys2} shows the Basys 2 peripherals that the user can use in order to interact with the sequencer.
+
+\begin{figure}[!h]
+  \centerline{\includegraphics[scale=1]{bdboard.png}}
+  \vspace{0cm}\caption{Basys 2 board peripherals}
+  \label{fig:bdbasys2}
 \end{figure}
 
+\section{Implementation}
+
+
+Since the sequencer depends on multiple time-dependant routines and there is no trivial way to deal with this on the picoversat controller (because of the lack of interrupts), the main logic is divided into two routines: one for the main sequencer loop, implemented as a standalone peripheral, the ''Sequencer loop controller'', and other for the reading and debouncing of the pushbuttons and for keeping track of the frequency and loop values.
+
+
+\noindent All the peripherals and modules are interconnected as described in the following picture:
+
 \begin{figure}[!htbp]
-  \centerline{\includegraphics[scale=1]{SequencerLoopcontroler.pdf}}
+  \centerline{\includegraphics[scale=0.5]{periphmoddiag.pdf}}
+  \vspace{0cm}\caption{Basys 2 board peripherals}
+  \label{fig:periphmoddiag}
+\end{figure}
+
+
+
+
+\noindent The sequencer loop controller is used to generate the sequencer loop. The loop and note frequency can be set by using the \textit{freq} input and by selecting the according selector signal.
+The Sequencer loop controller will output a square wave corresponding to the loop ouput. The led outputs are directly connected to the LED driver peripheral and send information about the current note. 
+
+\noindent The sequencer loop controller operation is described by the fluxogram on Picture \ref{fig:fluxloop}.
+
+
+\begin{figure}[!htbp]
+    \centerline{\includegraphics[scale=0.5]{SequencerLoopcontroler.png}}
+    \vspace{0cm}\caption{PicoVersat SoC with two peripherals}
+    \label{fig:periphs}
+\end{figure}
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[!htbp]
+    \centering
+    \caption{Sequencer Loop Controller Inputs}
+    \label{tab:slcIn}
+    \begin{tabular}{@{}lcl@{}}
+    \toprule
+    Name      & \multicolumn{1}{l}{\#bits} & Description                                    \\ \midrule
+    freq & 8                          & Loop Period / Note Frequency                                    \\
+    sel\_loop & 1                          & Loop period select signal (address decoder)    \\
+    sel\_snd  & 1                          & Note frequency select signal (address decoder) \\ \bottomrule
+    \end{tabular}
+    \end{table}
+
+    % Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[!htbp]
+    \centering
+    \caption{Sequencer Loop Controller Outputs}
+    \label{tab:slcOut}
+    \begin{tabular}{@{}lcl@{}}
+    \toprule
+    Name          & \multicolumn{1}{l}{\#bits} & Description             \\ \midrule
+    snd\_out      & 1                          & Audio Output            \\
+    seq\_led\_out & 8                          & Current note led output \\ \bottomrule
+    \end{tabular}
+    \end{table}
+
+\begin{figure}[!htbp]
+  \centerline{\includegraphics[scale=0.4]{Sequencer_loop_controller_flux.pdf}}
   \vspace{0cm}\caption{Sequencer Loop controler fluxogram.}
   \label{fig:bd}
 \end{figure}
 
 
 
-\section{Block Diagram}
+\begin{figure}[htbp]
+  \centerline{\includegraphics[scale=0.4]{picoversat_flux.pdf}}
+  \vspace{0cm}\caption{Picoversat code fluxogram.}
+  \label{fig:fluxloop}
+\end{figure}
 
-The hardware platform used for the developed sequencer is the Basys 2 FPGA board by Digilent. The sequencer will interface with some of the board peripherals as shown in the Figure~\ref{fig:bd}. 
+\newpage
 
-\begin{figure}[!htbp]
+\subsection{Block Diagram}
+
+
+\begin{figure}[!h]
     \centerline{\includegraphics[scale=0.5]{bd.png}}
     \vspace{0cm}\caption{Block Diagram}
     \label{fig:bd}
 \end{figure}
-
-Figure~\ref{fig:bdbasys2} shows the Basys 2 peripherals that the user can use in order to interact with the sequencer.
-
-\begin{figure}[!htbp]
-  \centerline{\includegraphics[scale=1]{bdboard.png}}
-  \vspace{0cm}\caption{Basys 2 board peripherals}
-  \label{fig:bdbasys2}
-\end{figure}
-
-\begin{enumerate}
-	\item 8xLED
-	\item 8xSlide-Switches
-	\item 4xPush-Button
-	\item 1xAudio Output
-\end{enumerate}
 
 
 

@@ -52,20 +52,18 @@ initializations nop
     wrw R14
 
 
-    ldi 7
+    ldi 0
     wrw LOOP_BASE
     ldi 0
-    wrw 606
+    wrw SND_BASE
 
 # main loop
 mainloop nop
     ldi 0xFFFFF
     wrw R3
     rdw PUSH_BASE 
-
 #store push button state on r4
     wrw R4 
-
 
 #CHECK MAIN BUTTONS
 # btn1  test routine
@@ -85,7 +83,8 @@ btn1pressed nop
     beqi speedupdate
 
 dontupdate1 nop
-    beqi speedupdate
+    ldi 0
+    beqi debounceLoop
 
 
 # btn2  test routine
@@ -106,7 +105,8 @@ btn2pressed nop
     beqi speedupdate
 
 dontupdate2 nop
-    beqi speedupdate
+    ldi 0
+    beqi debounceLoop
 
 
 #========BUTTON COMBOS========
@@ -130,7 +130,8 @@ btn1altpressed nop
     beqi soundupdate
 
 dontupdate1alt nop
-    beqi soundupdate
+    ldi 0
+    beqi debounceLoop
 
 # btn2alt  test routine
 btn2alttest nop 
@@ -141,7 +142,7 @@ btn2alttest nop
 # btn 2alt pressed routine
 btn2altpressed nop
     rdw R13           
-    beqi dontupdate2alt
+    beqi debounceLoop
     rdw R13
     sub R5
     wrw R12
@@ -149,6 +150,7 @@ btn2altpressed nop
     beqi soundupdate
 
 dontupdate2alt nop
+    ldi 0
     beqi debounceLoop
 
 
@@ -157,7 +159,7 @@ dontupdate2alt nop
 speedupdate nop
     rdw R1
     sub R2
-    beqi noupdate
+    beqi debounceLoop
     rdw R1
     wrw LOOP_BASE
 #update old speed
@@ -170,7 +172,7 @@ noupdate nop
 soundupdate nop
     rdw R12
     sub R13
-    beqi noupdatesnd
+    beqi debounceLoop
     rdw R12
     wrw SND_BASE
 #update old speed
