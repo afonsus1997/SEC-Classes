@@ -1,14 +1,7 @@
-//clk = 50Mhz
-//snd freq - 200Hz..1kHz
-//1k = 61A8
-//200Hz = 1E848 
 
-//8s varrimento = h2FAF080
-//tempo de som = 0x17D784
-
-//`define sim
-//`define 32bit
-`define normal
+//`define sim - reduces delay times for ease of simulation
+//`define 32bit - recieves the timing thresholds through data bus
+`define normal //normal operation
 
 module sequencer_loop_controller(
     `ifdef normal
@@ -43,11 +36,10 @@ module sequencer_loop_controller(
 
 	assign snd_out = snd_gen & snd_en & ((kbd_in >> curr_sft) & 1);
 	
-    //	assign sndenreg = sweep;
 	
 `ifdef sim //used for simulation purposes, small delays
 	always @(posedge sel_snd, posedge rst) begin
-//		if(sel_snd) begin
+		if(sel_snd) begin
 			case(freqin)
 				8'd0 : freq <= 20'd1;
 				8'd1 : freq <= 20'd2;
@@ -66,7 +58,7 @@ module sequencer_loop_controller(
 				8'd14 : freq <= 20'd15;
 				8'd15 : freq <= 20'd16;
 			endcase
-//		end
+		end
 	end
 	
 	always @(posedge clk) begin
@@ -128,9 +120,6 @@ module sequencer_loop_controller(
 		end
 	end
 	
-	
-	//assign snd_en_time = sweep << 3;
-	
 	always @(posedge sel_loop, posedge rst) begin
 		if(rst)
 			sweep <= 26'h5F5E10;
@@ -156,17 +145,13 @@ module sequencer_loop_controller(
 				8'd6 : snd_en_time <= 25'hBEBC20;
 				8'd7 : snd_en_time <= 25'h17D7840;
 			endcase
-		
 		end
-		
-	
 	end
 	 
 	
 `endif
 	
 `ifdef 32bit //Timing information recieved from picoversat, implemented but not used
-
 	always @(posedge clk) begin
 		if(sel_snd) begin
 			freq <= freqin;
@@ -177,28 +162,8 @@ module sequencer_loop_controller(
 		if(sel_loop) begin
 			sweep <= freqin;
 			snd_en_time = sweep << 3;
-			
 		end
-		
-	
 	end
-	 
-	
-	//always @(sndenreg) begin
-	
-	//	case(sndenreg)
-	//		8'd0 : snd_en_time <= 25'h2FAF08;
-	//		8'd1 : snd_en_time <= 25'h367EE4;
-	//		8'd2 : snd_en_time <= 25'h3F940A;
-	//		8'd3 : snd_en_time <= 25'h4C4B40;
-	//		8'd4 : snd_en_time <= 25'h5F5E10;
-	//		8'd5 : snd_en_time <= 25'h7F2815;
-	//		8'd6 : snd_en_time <= 25'hBEBC20;
-	//		8'd7 : snd_en_time <= 25'h17D7840;
-	//	endcase
-	
-	//end
-	
 
 `endif
 	
@@ -236,8 +201,6 @@ module sequencer_loop_controller(
 			loop_counter <= loop_counter + 1;
 		end
 		
-		//snd_en_h <= (kbd_in >> curr_sft) & 1;
-
 	end
 	
 	

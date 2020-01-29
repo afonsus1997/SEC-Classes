@@ -32,15 +32,9 @@ module xaddr_decoder (
 
 
                 //module selects
-                           //loop controller selects
+                //loop controller selects
                 output reg sel_loop,
                 output reg  sel_snd,
-
-                //switch selects
-//                output reg kbd_sel,
-
-                //push-btn selects
-//                output reg sw_sel, 
                      
 					input [3:0] btn_rd
 					);
