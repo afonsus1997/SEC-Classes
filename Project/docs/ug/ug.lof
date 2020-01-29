@@ -1,7 +1,7 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces Basys 2 board peripherals}}{7}{figure.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Basys 2 board peripherals}}{8}{figure.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces PicoVersat SoC with two peripherals}}{8}{figure.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces PicoVersat SoC with two peripherals}}{9}{figure.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces Sequencer Loop controler fluxogram.}}{9}{figure.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces PicoVersat SoC with two peripherals}}{10}{figure.6}
+\contentsline {figure}{\numberline {2}{\ignorespaces Sequencer modules}}{8}{figure.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Sequencer Loop Controller module}}{8}{figure.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Sequencer Loop Controller bus connections}}{9}{figure.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Sequencer Loop Controler fluxogram}}{9}{figure.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces PicoVersat SoC with the peripherals}}{10}{figure.6}
 \contentsline {figure}{\numberline {7}{\ignorespaces Picoversat code fluxogram.}}{11}{figure.7}

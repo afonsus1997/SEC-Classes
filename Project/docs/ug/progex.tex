@@ -1,5 +1,12 @@
 \section{Conclusions}
 \label{sec:conc}
 
+The developed system works as expected, everything defined in the beginning of the project was achieved. 
+There were a few challenges while developing the system, nonetheless they were overcomed.
+ The biggest setback was the fact that, initially the system's code was develop in C and compiled with lcc for
+the picoversat. However, in the end the compiled code was bigger then the available memory. After several attempts to widen the memory
+available without success, the code was re-written using Assembly. In the end it was possible to use the sequencer to produce a rhythmic pattern with varying speeds and frequencies.
+The final implementation was also converted into a standalone rom file that was flashed into the boards persistent memory in order for the bitstream to be loaded into the FPGA on boot.
+
 \href{https://bit.ly/36yPWnT
 }{Link to a short demo}
