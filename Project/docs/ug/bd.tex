@@ -31,10 +31,11 @@ Since the sequencer depends on multiple time-dependant routines and there is no 
 \end{figure}
 
 
+\subsection{Sequencer Loop Controller}
 
 
 \noindent The sequencer loop controller is used to generate the sequencer loop. The loop and note frequency can be set by using the \textit{freq} input and by selecting the according selector signal.
-The Sequencer loop controller will output a square wave corresponding to the loop ouput. The led outputs are directly connected to the LED driver peripheral and send information about the current note. 
+The Sequencer loop controller will output a square wave corresponding to the loop ouput. The led outputs are directly connected to the LED driver peripheral and send information about the current and selected note. 
 
 \noindent The sequencer loop controller operation is described by the fluxogram on Picture \ref{fig:fluxloop}.
 
@@ -74,12 +75,44 @@ The Sequencer loop controller will output a square wave corresponding to the loo
     \end{tabular}
     \end{table}
 
+    \begin{figure}[!htbp]
+      \centerline{\includegraphics[scale=0.5]{periphs_interconn.png}}
+      \vspace{0cm}\caption{PicoVersat SoC with two peripherals}
+      \label{fig:periphs}
+  \end{figure}
+
 \begin{figure}[!htbp]
   \centerline{\includegraphics[scale=0.4]{Sequencer_loop_controller_flux.pdf}}
   \vspace{0cm}\caption{Sequencer Loop controler fluxogram.}
   \label{fig:bd}
 \end{figure}
 
+
+\subsection{Picoversat}
+
+For reading the pushbuttons, debouncing and managing loop and sound frequencies, the picoversat SoC was used. The Sequencer Loop Controler is connected to the picoversat data bus and the loop and sound frequency registers are mapped in memory. For this, the picoversat address decoder was altered so that the sequencer loop controller's registers can be accessed. This was also done for the push-buttons.
+
+Some auxiliary modules were also added to the picoversat:
+
+\subsubsection{General Purpose Register File}
+
+This peripheral contains a 16x32bit register file that can be used by user
+programs. Refer to the picoversat manual for more information about this peripheral. 
+
+
+\subsubsection{Debug Printer}
+
+This peripheral can be used by user programs to print characters, mainly for
+debug purposes. Refer to the picoversat manual for more information about this peripheral.
+
+
+All of the aforementioned peripherals connect to the picoversat as described below:
+
+\begin{figure}[!htbp]
+  \centerline{\includegraphics[scale=0.7]{periphs.pdf}}
+  \vspace{0cm}\caption{PicoVersat SoC with two peripherals}
+  \label{fig:periphs}
+\end{figure}
 
 
 \begin{figure}[htbp]
@@ -102,8 +135,3 @@ The Sequencer loop controller will output a square wave corresponding to the loo
 
 
 
-\begin{figure}[!htbp]
-    \centerline{\includegraphics[scale=0.5]{periphs.png}}
-    \vspace{0cm}\caption{PicoVersat SoC with two peripherals}
-    \label{fig:periphs}
-\end{figure}

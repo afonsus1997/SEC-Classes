@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.28)  29 JAN 2020 14:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.28)  29 JAN 2020 17:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -237,28 +237,13 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \@thisrulewidth=\dimen130
 ) (./ug.aux
 
+LaTeX Warning: Label `fig:periphs' multiply defined.
+
+
+LaTeX Warning: Label `fig:periphs' multiply defined.
+
+
 LaTeX Warning: Label `fig:bd' multiply defined.
-
-
-LaTeX Warning: Label `fig:periphs' multiply defined.
-
-
-LaTeX Warning: Label `fig:periphs' multiply defined.
-
-
-LaTeX Warning: Label `tab:slcIn' multiply defined.
-
-
-LaTeX Warning: Label `tab:slcOut' multiply defined.
-
-
-LaTeX Warning: Label `fig:periphs' multiply defined.
-
-
-LaTeX Warning: Label `fig:periphs' multiply defined.
-
-
-LaTeX Warning: Label `fig:periphs' multiply defined.
 
 
 LaTeX Warning: Label `fig:periphs' multiply defined.
@@ -368,7 +353,7 @@ LaTeX Info: Redefining \nameref on input line 7.
 
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <24.88> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 9.
-<./figures/Logo.png, id=64, 94.10156pt x 103.88812pt>
+<./figures/Logo.png, id=52, 94.10156pt x 103.88812pt>
 File: ./figures/Logo.png Graphic file (type png)
 <use ./figures/Logo.png>
 Package pdftex.def Info: ./figures/Logo.png  used on input line 9.
@@ -441,44 +426,50 @@ Package pdftex.def Info: ./figures/Logo.png  used on input line 17.
  [6
 
 ] (./intro.tex) (./bd.tex
-<./figures/bdboard.png, id=168, 144.54pt x 89.58469pt>
+<./figures/bdboard.png, id=131, 144.54pt x 89.58469pt>
 File: ./figures/bdboard.png Graphic file (type png)
 <use ./figures/bdboard.png>
 Package pdftex.def Info: ./figures/bdboard.png  used on input line 14.
 (pdftex.def)             Requested size: 144.53963pt x 89.58446pt.
-<./figures/periphmoddiag.pdf, id=169, 442.53331pt x 399.41219pt>
+<./figures/periphmoddiag.pdf, id=132, 442.53331pt x 399.41219pt>
 File: ./figures/periphmoddiag.pdf Graphic file (type pdf)
 <use ./figures/periphmoddiag.pdf>
 Package pdftex.def Info: ./figures/periphmoddiag.pdf  used on input line 28.
 (pdftex.def)             Requested size: 221.26611pt x 199.7056pt.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 34.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 36.
-<./figures/SequencerLoopcontroler.png, id=171, 227.34938pt x 166.37157pt>
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 37.
+
+Underfull \vbox (badness 5302) has occurred while \output is active []
+
+File: ./figures/Logo.png Graphic file (type png)
+<use ./figures/Logo.png>
+Package pdftex.def Info: ./figures/Logo.png  used on input line 39.
+(pdftex.def)             Requested size: 23.52533pt x 25.97195pt.
+ [7 <./figures/bdboard.png>]
+<./figures/SequencerLoopcontroler.png, id=141, 227.34938pt x 166.37157pt>
 File: ./figures/SequencerLoopcontroler.png Graphic file (type png)
 <use ./figures/SequencerLoopcontroler.png>
 Package pdftex.def Info: ./figures/SequencerLoopcontroler.png  used on input li
-ne 43.
+ne 44.
 (pdftex.def)             Requested size: 113.67441pt x 83.18556pt.
-File: ./figures/Logo.png Graphic file (type png)
-<use ./figures/Logo.png>
-Package pdftex.def Info: ./figures/Logo.png  used on input line 46.
-(pdftex.def)             Requested size: 23.52533pt x 25.97195pt.
- [7 <./figures/bdboard.png>]
-<./figures/Sequencer_loop_controller_flux.pdf, id=181, 741.73106pt x 421.575pt>
+<./figures/periphs_interconn.png, id=142, 289.08pt x 220.57407pt>
+File: ./figures/periphs_interconn.png Graphic file (type png)
+<use ./figures/periphs_interconn.png>
+Package pdftex.def Info: ./figures/periphs_interconn.png  used on input line 79
+.
+(pdftex.def)             Requested size: 144.53964pt x 110.28676pt.
+<./figures/Sequencer_loop_controller_flux.pdf, id=143, 741.73106pt x 421.575pt>
 
 File: ./figures/Sequencer_loop_controller_flux.pdf Graphic file (type pdf)
 <use ./figures/Sequencer_loop_controller_flux.pdf>
 Package pdftex.def Info: ./figures/Sequencer_loop_controller_flux.pdf  used on 
-input line 78.
+input line 85.
 (pdftex.def)             Requested size: 296.68716pt x 168.627pt.
-<./figures/picoversat_flux.pdf, id=182, 695.7192pt x 399.41219pt>
-File: ./figures/picoversat_flux.pdf Graphic file (type pdf)
-<use ./figures/picoversat_flux.pdf>
-Package pdftex.def Info: ./figures/picoversat_flux.pdf  used on input line 86.
-(pdftex.def)             Requested size: 278.28275pt x 159.76204pt.
 File: ./figures/Logo.png Graphic file (type png)
 <use ./figures/Logo.png>
-Package pdftex.def Info: ./figures/Logo.png  used on input line 91.
+Package pdftex.def Info: ./figures/Logo.png  used on input line 94.
 (pdftex.def)             Requested size: 23.52533pt x 25.97195pt.
  [8 <./figures/periphmoddiag.pdf
 
@@ -487,107 +478,72 @@ alid other resource which is no dict (key 'ProcSets', type <array>); ignored.
 > <./figures/SequencerLoopcontroler.png>]
 File: ./figures/Logo.png Graphic file (type png)
 <use ./figures/Logo.png>
-Package pdftex.def Info: ./figures/Logo.png  used on input line 91.
+Package pdftex.def Info: ./figures/Logo.png  used on input line 94.
 (pdftex.def)             Requested size: 23.52533pt x 25.97195pt.
- [9 <./figures/Sequencer_loop_controller_flux.pdf
+ [9 <./figures/periphs_interconn.png> <./figures/Sequencer_loop_controller_flux
+.pdf
 
 pdfTeX warning: pdflatex (file ./figures/Sequencer_loop_controller_flux.pdf): P
 DF inclusion: invalid other resource which is no dict (key 'ProcSets', type <ar
 ray>); ignored.
-> <./figures/picoversat_flux.pdf
+>]
+<./figures/periphs.pdf, id=191, 631.62274pt x 289.05154pt>
+File: ./figures/periphs.pdf Graphic file (type pdf)
+<use ./figures/periphs.pdf>
+Package pdftex.def Info: ./figures/periphs.pdf  used on input line 112.
+(pdftex.def)             Requested size: 442.1329pt x 202.33469pt.
+<./figures/picoversat_flux.pdf, id=192, 695.7192pt x 399.41219pt>
+File: ./figures/picoversat_flux.pdf Graphic file (type pdf)
+<use ./figures/picoversat_flux.pdf>
+Package pdftex.def Info: ./figures/picoversat_flux.pdf  used on input line 119.
+
+(pdftex.def)             Requested size: 278.28275pt x 159.76204pt.
+File: ./figures/Logo.png Graphic file (type png)
+<use ./figures/Logo.png>
+Package pdftex.def Info: ./figures/Logo.png  used on input line 124.
+(pdftex.def)             Requested size: 23.52533pt x 25.97195pt.
+ [10 <./figures/periphs.pdf>]
+<./figures/bd.png, id=209, 385.44pt x 341.77687pt>
+File: ./figures/bd.png Graphic file (type png)
+<use ./figures/bd.png>
+Package pdftex.def Info: ./figures/bd.png  used on input line 130.
+(pdftex.def)             Requested size: 192.71953pt x 170.88802pt.
+) (./periphs.tex
+File: ./figures/periphs_interconn.png Graphic file (type png)
+<use ./figures/periphs_interconn.png>
+Package pdftex.def Info: ./figures/periphs_interconn.png  used on input line 9.
+
+(pdftex.def)             Requested size: 144.53964pt x 110.28676pt.
+) (./is.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: ./figures/Logo.png Graphic file (type png)
+<use ./figures/Logo.png>
+Package pdftex.def Info: ./figures/Logo.png  used on input line 21.
+(pdftex.def)             Requested size: 23.52533pt x 25.97195pt.
+ [11 <./figures/picoversat_flux.pdf
 
 pdfTeX warning: pdflatex (file ./figures/picoversat_flux.pdf): PDF inclusion: i
 nvalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
 
->]
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 93.
-<./figures/bd.png, id=241, 385.44pt x 341.77687pt>
-File: ./figures/bd.png Graphic file (type png)
-<use ./figures/bd.png>
-Package pdftex.def Info: ./figures/bd.png  used on input line 97.
-(pdftex.def)             Requested size: 192.71953pt x 170.88802pt.
-<./figures/periphs.png, id=242, 631.60968pt x 289.08pt>
-File: ./figures/periphs.png Graphic file (type png)
-<use ./figures/periphs.png>
-Package pdftex.def Info: ./figures/periphs.png  used on input line 106.
-(pdftex.def)             Requested size: 315.80406pt x 144.53964pt.
-) (./periphs.tex
-Underfull \vbox (badness 3354) has occurred while \output is active []
-
-File: ./figures/Logo.png Graphic file (type png)
-<use ./figures/Logo.png>
-Package pdftex.def Info: ./figures/Logo.png  used on input line 16.
-(pdftex.def)             Requested size: 23.52533pt x 25.97195pt.
- [10 <./figures/bd.png> <./figures/periphs.png>]
-File: ./figures/SequencerLoopcontroler.png Graphic file (type png)
-<use ./figures/SequencerLoopcontroler.png>
-Package pdftex.def Info: ./figures/SequencerLoopcontroler.png  used on input li
-ne 22.
-(pdftex.def)             Requested size: 113.67441pt x 83.18556pt.
-<./figures/led_drive_blk.png, id=251, 227.34938pt x 166.37157pt>
-File: ./figures/led_drive_blk.png Graphic file (type png)
-<use ./figures/led_drive_blk.png>
-Package pdftex.def Info: ./figures/led_drive_blk.png  used on input line 61.
-(pdftex.def)             Requested size: 113.67441pt x 83.18556pt.
-<./figures/sw_drive_blk.png, id=252, 227.34938pt x 166.37157pt>
-File: ./figures/sw_drive_blk.png Graphic file (type png)
-<use ./figures/sw_drive_blk.png>
-Package pdftex.def Info: ./figures/sw_drive_blk.png  used on input line 99.
-(pdftex.def)             Requested size: 113.67441pt x 83.18556pt.
-File: ./figures/Logo.png Graphic file (type png)
-<use ./figures/Logo.png>
-Package pdftex.def Info: ./figures/Logo.png  used on input line 102.
-(pdftex.def)             Requested size: 23.52533pt x 25.97195pt.
- [11 <./figures/led_drive_blk.png>]
-<./figures/push_drive_blk.png, id=259, 228.10219pt x 166.37157pt>
-File: ./figures/push_drive_blk.png Graphic file (type png)
-<use ./figures/push_drive_blk.png>
-Package pdftex.def Info: ./figures/push_drive_blk.png  used on input line 140.
-(pdftex.def)             Requested size: 114.0508pt x 83.18556pt.
-<./figures/periphs_interconn.png, id=260, 289.83281pt x 720.44156pt>
-File: ./figures/periphs_interconn.png Graphic file (type png)
-<use ./figures/periphs_interconn.png>
-Package pdftex.def Info: ./figures/periphs_interconn.png  used on input line 17
-5.
-(pdftex.def)             Requested size: 144.91605pt x 360.2199pt.
-)
-(./is.tex) (./mem_map.tex
+> <./figures/bd.png>]) (./mem_map.tex
 Overfull \hbox (44.83739pt too wide) in paragraph at lines 12--23
  [][] 
  []
 
-File: ./figures/Logo.png Graphic file (type png)
-<use ./figures/Logo.png>
-Package pdftex.def Info: ./figures/Logo.png  used on input line 23.
-(pdftex.def)             Requested size: 23.52533pt x 25.97195pt.
-[12 <./figures/sw_drive_blk.png> <./figures/push_drive_blk.png>]
-File: ./figures/Logo.png Graphic file (type png)
-<use ./figures/Logo.png>
-Package pdftex.def Info: ./figures/Logo.png  used on input line 23.
-(pdftex.def)             Requested size: 23.52533pt x 25.97195pt.
- [13 <./figures/periphs_interconn.png>]) (./isa.tex) (./progex.tex)
+) (./isa.tex) (./progex.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 37.
-
-Underfull \vbox (badness 4416) has occurred while \output is active []
-
 File: ./figures/Logo.png Graphic file (type png)
 <use ./figures/Logo.png>
 Package pdftex.def Info: ./figures/Logo.png  used on input line 37.
 (pdftex.def)             Requested size: 23.52533pt x 25.97195pt.
- [14]
-File: ./figures/Logo.png Graphic file (type png)
-<use ./figures/Logo.png>
-Package pdftex.def Info: ./figures/Logo.png  used on input line 37.
-(pdftex.def)             Requested size: 23.52533pt x 25.97195pt.
-
-[15]
+ [12]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 37.
  (./ug.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 37.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 37.
 Package rerunfilecheck Info: File `ug.out' has not changed.
-(rerunfilecheck)             Checksum: 216D72E2A52CCA348AE628DE2383DE34;940.
+(rerunfilecheck)             Checksum: EA5618798EB7436F4F06BEC620D47C87;708.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -595,10 +551,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 37.
  ) 
 Here is how much of TeX's memory you used:
- 5998 strings out of 492982
- 89079 string characters out of 6134896
- 184324 words of memory out of 5000000
- 9416 multiletter control sequences out of 15000+600000
+ 5956 strings out of 492982
+ 88354 string characters out of 6134896
+ 179014 words of memory out of 5000000
+ 9394 multiletter control sequences out of 15000+600000
  21798 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  35i,15n,45p,464b,408s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -608,10 +564,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helveti
 c/uhvro8a.pfb>
-Output written on ug.pdf (15 pages, 327086 bytes).
+Output written on ug.pdf (12 pages, 279705 bytes).
 PDF statistics:
- 321 PDF objects out of 1000 (max. 8388607)
- 261 compressed objects within 3 object streams
- 58 named destinations out of 1000 (max. 500000)
- 181 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 268 PDF objects out of 1000 (max. 8388607)
+ 215 compressed objects within 3 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 142 words of extra memory for PDF output out of 10000 (max. 10000000)
 
